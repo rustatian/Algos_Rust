@@ -1,6 +1,10 @@
 use std::io::{self, Read};
 
+
+
 fn main() {
+    let x = 5;
+    println!("x type is {}", x);
 //    let mut buffer = String::new();
 //    loop {
 //        match io::stdin().read_line(&mut buffer) {
@@ -20,7 +24,7 @@ fn main() {
 
     assert_eq!(lazy[3], 7);
 
-    let mut sieve = [0u8; 10000];
+    let mut sieve = [true; 10000];
     sieve.sort();
 
     for i in 2..100 {
@@ -34,5 +38,4 @@ fn main() {
     }
 
     assert!(sieve[211]);
-    assert!(sieve[9876]);
 }
