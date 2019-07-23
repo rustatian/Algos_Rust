@@ -1,10 +1,5 @@
-[workspace]
-members = [
-    "Sadgewick/Chapter1"
-]
-
 [package]
-name = "Algos_Rust"
+name = "exex_and_ohs"
 version = "0.1.0"
 authors = ["Valery Piashchynski <piashchynski_valery@hotmail.com>"]
 edition = "2018"
