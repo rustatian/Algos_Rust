@@ -39,3 +39,11 @@ fn main() {
 
     assert!(sieve[211]);
 }
+
+fn find(needle: u16, haystack: Vec<u16>) -> Option<usize> {
+
+}
+
+fn find_file(path: &str) -> Result<String, io::Error> {
+
+}
