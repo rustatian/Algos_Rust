@@ -15,5 +15,6 @@ members = [
     "8kyu/bool_to_str",
     "7kyu/exex_and_ohs",
     "7kyu/mumbling",
+    "7kyu/sum_odd_numbers",
     "6kyu/Schrödinger's_Boolean"
 ]

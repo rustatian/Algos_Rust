@@ -1,3 +1,5 @@
+use std::borrow::Borrow;
+
 fn main() {
     println!("Hello, world!");
 }
@@ -12,21 +14,42 @@ fn main() {
 
 #[test]
 fn basic_tests() {
-    assert_eq!(accum("ZpglnRxqenU"), "Z-Pp-Ggg-Llll-Nnnnn-Rrrrrr-Xxxxxxx-Qqqqqqqq-Eeeeeeeee-Nnnnnnnnnn-Uuuuuuuuuuu");
-    assert_eq!(accum("NyffsGeyylB"), "N-Yy-Fff-Ffff-Sssss-Gggggg-Eeeeeee-Yyyyyyyy-Yyyyyyyyy-Llllllllll-Bbbbbbbbbbb");
-    assert_eq!(accum("MjtkuBovqrU"), "M-Jj-Ttt-Kkkk-Uuuuu-Bbbbbb-Ooooooo-Vvvvvvvv-Qqqqqqqqq-Rrrrrrrrrr-Uuuuuuuuuuu");
-    assert_eq!(accum("EvidjUnokmM"), "E-Vv-Iii-Dddd-Jjjjj-Uuuuuu-Nnnnnnn-Oooooooo-Kkkkkkkkk-Mmmmmmmmmm-Mmmmmmmmmmm");
-    assert_eq!(accum("HbideVbxncC"), "H-Bb-Iii-Dddd-Eeeee-Vvvvvv-Bbbbbbb-Xxxxxxxx-Nnnnnnnnn-Cccccccccc-Ccccccccccc");
+    assert_eq!(accum_functional("ZpglnRxqenU"), "Z-Pp-Ggg-Llll-Nnnnn-Rrrrrr-Xxxxxxx-Qqqqqqqq-Eeeeeeeee-Nnnnnnnnnn-Uuuuuuuuuuu");
+    assert_eq!(accum_functional("NyffsGeyylB"), "N-Yy-Fff-Ffff-Sssss-Gggggg-Eeeeeee-Yyyyyyyy-Yyyyyyyyy-Llllllllll-Bbbbbbbbbbb");
+    assert_eq!(accum_functional("MjtkuBovqrU"), "M-Jj-Ttt-Kkkk-Uuuuu-Bbbbbb-Ooooooo-Vvvvvvvv-Qqqqqqqqq-Rrrrrrrrrr-Uuuuuuuuuuu");
+    assert_eq!(accum_functional("EvidjUnokmM"), "E-Vv-Iii-Dddd-Jjjjj-Uuuuuu-Nnnnnnn-Oooooooo-Kkkkkkkkk-Mmmmmmmmmm-Mmmmmmmmmmm");
+    assert_eq!(accum_functional("HbideVbxncC"), "H-Bb-Iii-Dddd-Eeeee-Vvvvvv-Bbbbbbb-Xxxxxxxx-Nnnnnnnnn-Cccccccccc-Ccccccccccc");
 }
 
+// my first approach
 fn accum(s: &str) -> String {
-    return s.chars().fold("", |i, c| {
-        if !c.is_uppercase() {
-            c.to_uppercase();
-        };
+    let mut str_new = String::new();
+    for (i, c) in s.chars().enumerate() {
+        if c.is_uppercase() {
+            str_new.push(c);
+            for j in 0..i {
+                str_new.push(c.to_ascii_lowercase());
+            }
+            str_new.push('-');
+            continue;
+        }
 
-        println!("{}", c);
-        return s
+        str_new.push(c.to_ascii_uppercase());
+        for j in 0..i {
+            str_new.push(c);
+        }
+        str_new.push('-');
+    }
 
-    }).to_string()
+    let _ = str_new.pop();
+
+
+    str_new
+}
+
+// functional solution
+fn accum_functional(s: &str) -> String {
+    s.chars().enumerate().map(|(i, c)| c.to_string().to_uppercase() +
+            &(0..i).map(|_| c.to_string().to_lowercase()).collect::<String>())
+        .collect::<Vec<_>>().join("-")
 }

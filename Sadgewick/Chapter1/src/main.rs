@@ -18,6 +18,8 @@ fn main() {
     let t = (12, "eggs");
     let b = Box::new(t);
 
+
+
     let lazy: [u32; 6] = [1, 2, 4, 7, 11, 19];
 
     let taxonomy = ["1", "2", "3"];
