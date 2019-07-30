@@ -16,5 +16,8 @@ members = [
     "7kyu/exex_and_ohs",
     "7kyu/mumbling",
     "7kyu/sum_odd_numbers",
-    "6kyu/Schrödinger's_Boolean"
+    "7kyu/string_ends_with?",
+    "6kyu/Schrödinger's_Boolean",
+    "6kyu/easy_diagonal",
+    "6kyu/digital_cypher_vol_3_missing_key"
 ]
