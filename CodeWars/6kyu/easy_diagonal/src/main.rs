@@ -17,32 +17,27 @@ fn main() {
 //##Hint: When following a diagonal from top to bottom have a look at the numbers on the diagonal at its right.
 //##Ref: http://mathworld.wolfram.com/BinomialCoefficient.html
 
-
-
 fn diagonal(n: u32, p: u32) -> u64 {
-    binom(n,p) + binom(n, p + 1)
+    binom(n, p) + binom(n, p + 1)
 }
 
-
-
 fn binom(n: u32, k: u32) -> u64 {
-    let mut res:u64 = 1;
+    let mut res: u64 = 1;
     for i in 0..k {
         res = (res * ((n - i) as u64)) / ((i + 1) as u64);
     }
     res
 }
 
-
-
 fn testing(n: u32, p: u32, exp: u64) -> () {
     assert_eq!(diagonal(n, p), exp)
 }
+
 #[test]
 fn basics_diagonal() {
-    testing(20,3, 5985);
-    testing(20,4, 20349);
-    testing(20,5, 54264);
-    testing(20,15, 20349);
-    testing(55,20,  1346766106565880);
+    testing(20, 3, 5985);
+    testing(20, 4, 20349);
+    testing(20, 5, 54264);
+    testing(20, 15, 20349);
+    testing(55, 20, 1346766106565880);
 }
