@@ -25,4 +25,6 @@ members = [
     "6kyu/float_point_approx",
     "6kyu/position_average",
     "6kyu/bystate",
+    "6kyu/rainfall",
+    "5kyu/gap_in_primes",
 ]
