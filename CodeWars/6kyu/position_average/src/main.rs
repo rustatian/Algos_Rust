@@ -1,3 +1,6 @@
+use std::ops::{Div, DivAssign, Rem};
+use std::fmt::Debug;
+
 fn main() {
     println!("Hello, world!");
 }
@@ -29,18 +32,24 @@ fn main() {
 //You can see other examples in the "Sample tests".
 
 fn pos_average(s: &str) -> f64 {
+    let s = s.replace(" ", "");
     let v: Vec<&str> = s.split(",").collect();
 
+    let total_chars = (v[0].len() * v.len()) as f64;
+    let mut chars_match: f64 = 0.0;
+    let mut permutation:f64 = 0.0;
+
     for i in 0..v.len() {
-        for j in 0..v[i].len() {
-            println!("{}", v[i])
-
-
+        for j in i + 1..v.len() {
+            for k in 0..v[i].len() {
+                permutation = permutation + 1.0;
+                if v[i].chars().nth(k) == v[j].chars().nth(k) {
+                    chars_match = chars_match + 1.0;
+                }
+            }
         }
-//        println!("{}", v[i])
     }
-    1.0
-    // your code
+    (chars_match.div(permutation)) as f64 * 100.0
 }
 
 #[cfg(test)]

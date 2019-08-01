@@ -17,10 +17,12 @@ members = [
     "7kyu/mumbling",
     "7kyu/sum_odd_numbers",
     "7kyu/string_ends_with?",
+    "7kyu/form_the_minimum",
     "6kyu/Schrödinger's_Boolean",
     "6kyu/easy_diagonal",
     "6kyu/digital_cypher_vol_3_missing_key",
     "6kyu/reducing_by_steps",
     "6kyu/float_point_approx",
     "6kyu/position_average",
+    "6kyu/bystate",
 ]
