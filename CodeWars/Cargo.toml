@@ -26,5 +26,6 @@ members = [
     "6kyu/position_average",
     "6kyu/bystate",
     "6kyu/rainfall",
+    "6kyu/steps_in_primes",
     "5kyu/gap_in_primes",
 ]
