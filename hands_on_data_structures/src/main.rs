@@ -1,33 +1,13 @@
-use std::rc::Rc;
+use crate::linked_list::*;
 
 mod shared_data;
+mod cow_sample;
+mod linked_list;
 
 fn main() {
-    no_ref_counter();
-}
+    let mut tl = TransactionLog::new_empty();
 
-#[allow(dead_code)]
-struct MyStruct {
-    x: Vec<i32>,
-}
+    tl.append(String::from("some_value"));
+    tl.append(String::from("some_value_2"));
 
-#[derive(Debug)]
-struct FileName {
-    name: Rc<String>,
-    ext: Rc<String>,
-}
-
-fn no_ref_counter() {
-    let name = Rc::new(String::from("main"));
-    let ext = Rc::new(String::from("rs"));
-
-    for _ in 0..3 {
-        println!(
-            "{:?}",
-            FileName {
-                name: name.clone(),
-                ext: ext.clone(),
-            }
-        )
-    }
 }
