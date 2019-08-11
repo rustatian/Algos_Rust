@@ -20,6 +20,7 @@ impl Node {
     }
 }
 
+
 pub struct TransactionLog {
     head: SingleLink,
     tail: SingleLink,
