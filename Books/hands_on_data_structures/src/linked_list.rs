@@ -51,7 +51,11 @@ impl TransactionLog {
             }
 
             self.length -= 1;
-            Rc::try_unwrap(head).ok().expect("Something is wrong").into_inner().value
+            Rc::try_unwrap(head)
+                .ok()
+                .expect("Something is wrong")
+                .into_inner()
+                .value
         })
     }
 }
