@@ -3,6 +3,7 @@ use crate::linked_list::*;
 mod shared_data;
 mod cow_sample;
 mod linked_list;
+mod doubly_linked_list;
 
 fn main() {
     let mut tl = TransactionLog::new_empty();
