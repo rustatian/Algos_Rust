@@ -4,6 +4,7 @@ mod shared_data;
 mod cow_sample;
 mod linked_list;
 mod doubly_linked_list;
+mod skip_lists;
 
 fn main() {
     let mut tl = TransactionLog::new_empty();
