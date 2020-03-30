@@ -4,6 +4,7 @@ mod number_of_steps;
 mod how_many_numbers_are_smaller;
 mod decompress_run_length_encoded_list;
 mod single_row_keyboard;
+mod even_number_of_digits;
 
 
 fn main() {
