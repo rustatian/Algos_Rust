@@ -33,11 +33,13 @@ impl Solution {
         let mut res = vec![];
         let mut i = 0;
 
-        while 2 * i + 1 < nums.len() { // till the end
+        while 2 * i + 1 < nums.len() {
+            // till the end
             let mut a = nums[2 * i]; //freq
             let b = nums[2 * i + 1]; // value
 
-            while a != 0 { // freq
+            while a != 0 {
+                // freq
                 res.push(b); // push value until freq will be 0
                 a -= 1; // reduce freq
             }
@@ -49,6 +51,12 @@ impl Solution {
 
 #[test]
 fn solution_test() {
-    assert_eq!(vec![1, 3, 3], Solution::decompress_rl_elist(vec![1, 1, 2, 3]));
-    assert_eq!(vec![2, 4, 4, 4], Solution::decompress_rl_elist(vec![1, 2, 3, 4]));
+    assert_eq!(
+        vec![1, 3, 3],
+        Solution::decompress_rl_elist(vec![1, 1, 2, 3])
+    );
+    assert_eq!(
+        vec![2, 4, 4, 4],
+        Solution::decompress_rl_elist(vec![1, 2, 3, 4])
+    );
 }

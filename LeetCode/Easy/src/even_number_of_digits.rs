@@ -25,10 +25,12 @@ pub struct Solution {}
 
 impl Solution {
     pub fn find_numbers(nums: Vec<i32>) -> i32 {
-        nums.iter().map(|x| x.to_string().len()).filter(|x| x % 2 == 0).count() as i32
+        nums.iter()
+            .map(|x| x.to_string().len())
+            .filter(|x| x % 2 == 0)
+            .count() as i32
     }
 }
-
 
 #[test]
 fn solution_test() {

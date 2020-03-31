@@ -12,8 +12,6 @@
 //Input: address = "255.100.50.0"
 //Output: "255[.]100[.]50[.]0"
 
-
-
 pub fn defang_i_paddr(address: String) -> String {
     address.replace(".", "[.]")
 }

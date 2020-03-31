@@ -27,6 +27,7 @@
 //
 // Input: num = 123
 // Output: 12
+
 pub struct Solution {}
 
 impl Solution {
@@ -51,4 +52,10 @@ impl Solution {
 
         step_count
     }
+}
+
+#[test]
+fn solution_test() {
+    assert_eq!(Solution::number_of_steps(14), 6);
+    assert_eq!(Solution::number_of_steps(8), 4);
 }
