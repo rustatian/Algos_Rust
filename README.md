@@ -13,6 +13,7 @@ Also: Algorithms from Big4 book, CodeWars, Leetcode, GeeksForGeeks and other tas
 * [Single-Row Keyboard](https://leetcode.com/problems/single-row-keyboard) --> [Repository](LeetCode/Easy/src/single_row_keyboard.rs)&nbsp;&nbsp;*`hash table`*
 * [Jewels and Stones](https://leetcode.com/problems/jewels-and-stones) --> [Repository](LeetCode/Easy/src/num_jewels_in_stones.rs)
 * [Subtract the Product and Sum of Digits of an Integer](https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer) --> [Repository](LeetCode/Easy/src/subtract_the_product_and_sum_of_digits_of_an_integer.rs)&nbsp;&nbsp;*`fold`*
+* [Single Number](https://leetcode.com/problems/single-number/) --> [Repository](LeetCode/Easy/src/single_number.rs)&nbsp;&nbsp;*`bit operations`*
 
 
 
