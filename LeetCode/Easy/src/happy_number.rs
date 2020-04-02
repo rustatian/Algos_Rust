@@ -37,7 +37,6 @@ impl Solution {
             match h.get(&rr) {
                 None => {
                     h.insert(rr, true);
-                    continue;
                 },
                 Some(_) => {
                     return false;
