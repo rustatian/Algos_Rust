@@ -15,7 +15,7 @@ Also: Algorithms from Big4 book, CodeWars, Leetcode, GeeksForGeeks and other tas
 * [Subtract the Product and Sum of Digits of an Integer](https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer) --> [Repository](LeetCode/Easy/src/subtract_the_product_and_sum_of_digits_of_an_integer.rs)&nbsp;&nbsp;*`fold`*
 * [Single Number](https://leetcode.com/problems/single-number/) --> [Repository](LeetCode/Easy/src/single_number.rs)&nbsp;&nbsp;*`bit operations`*
 * [Happy Number](https://leetcode.com/problems/happy-number/) --> [Repository](LeetCode/Easy/src/happy_number.rs)
-
+* [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) --> [Repository](LeetCode/Easy/src/maximum_subarray.rs)
 
 
 
