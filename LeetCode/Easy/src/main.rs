@@ -9,5 +9,6 @@ mod subtract_the_product_and_sum_of_digits_of_an_integer;
 mod single_number;
 mod happy_number;
 mod maximum_subarray;
+mod move_zeros;
 
 fn main() {}

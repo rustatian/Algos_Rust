@@ -16,6 +16,7 @@ Also: Algorithms from Big4 book, CodeWars, Leetcode, GeeksForGeeks and other tas
 * [Single Number](https://leetcode.com/problems/single-number/) --> [Repository](LeetCode/Easy/src/single_number.rs)&nbsp;&nbsp;*`bit operations`*
 * [Happy Number](https://leetcode.com/problems/happy-number/) --> [Repository](LeetCode/Easy/src/happy_number.rs)
 * [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) --> [Repository](LeetCode/Easy/src/maximum_subarray.rs)
+* [Move Zeroes](https://leetcode.com/problems/move-zeroes/) --> [Repository](LeetCode/Easy/src/move_zeros.rs)
 
 
 
