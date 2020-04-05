@@ -38,6 +38,9 @@ impl Solution {
 
 
     pub fn max_profit_peak_and_valleys(prices: Vec<i32>) -> i32 {
+        if prices.is_empty() {
+            return 0;
+        }
         let mut i = 0;
         let mut valley = prices[0];
         let mut peak = prices[0];

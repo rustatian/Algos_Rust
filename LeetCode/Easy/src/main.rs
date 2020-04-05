@@ -11,5 +11,6 @@ mod happy_number;
 mod maximum_subarray;
 mod move_zeros;
 mod best_time_to_buy_and_sell_stock_2;
+mod best_time_to_buy_and_sell_stock;
 
 fn main() {}
