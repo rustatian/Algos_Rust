@@ -17,7 +17,7 @@ Also: Algorithms from Big4 book, CodeWars, Leetcode, GeeksForGeeks and other tas
 * [Happy Number](https://leetcode.com/problems/happy-number/) --> [Repository](LeetCode/Easy/src/happy_number.rs)
 * [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) --> [Repository](LeetCode/Easy/src/maximum_subarray.rs)
 * [Move Zeroes](https://leetcode.com/problems/move-zeroes/) --> [Repository](LeetCode/Easy/src/move_zeros.rs)
-
+* [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) --> [Repository](LeetCode/Easy/src/best_time_to_buy_and_sell_stock_2.rs)
 
 
 
