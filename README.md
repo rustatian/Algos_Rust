@@ -20,6 +20,7 @@ Also: Algorithms from Big4 book, CodeWars, Leetcode, GeeksForGeeks and other tas
 * [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) --> [Repository](LeetCode/Easy/src/best_time_to_buy_and_sell_stock_2.rs)
 * [Best Time to Buy and Sell Stock I](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) --> [Repository](LeetCode/Easy/src/best_time_to_buy_and_sell_stock.rs)
 * [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) --> [Repository](LeetCode/Easy/src/middle_of_the_linked_list.rs)*`linked list`*
+* [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/) --> [Repository](LeetCode/Easy/src/backspace_string_compare.rs)
 
 
 ### Medium
