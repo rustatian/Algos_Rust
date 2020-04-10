@@ -17,7 +17,7 @@ jobs:
 
     steps:
       - name: Clean temp directory
-        run: cat ./Algos_Rust/LeetCode/Easy/Cargo.toml
+        run: ls
 
       - name: Test_easy
         uses: actions-rs/cargo@v1
