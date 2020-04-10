@@ -23,10 +23,10 @@ jobs:
         uses: actions-rs/cargo@v1
         with:
           command: test
-          args: --manifest-path ./Easy/Cargo.toml
+          args: --manifest-path /home/runner/work/Algos_Rust/Algos_Rust/LeetCode/Easy/Cargo.toml
 
       - name: Test_medium
         uses: actions-rs/cargo@v1
         with:
           command: test
-          args: --manifest-path ./Medium/Cargo.toml
+          args: --manifest-path /home/runner/work/Algos_Rust/Algos_Rust/LeetCode/Medium/Cargo.toml
