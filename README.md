@@ -1,6 +1,8 @@
 # Rust LeetCode (mostly) solutions 
 [Working to solve the rest :) ]
 
+![CI](https://github.com/48d90782/Algos_Rust/workflows/CI/badge.svg)
+
 Also: Algorithms from Big4 book, CodeWars, Leetcode, GeeksForGeeks and other tasks for learning purposes implemented by myself in Rust
 
 # LeetCode
@@ -21,6 +23,7 @@ Also: Algorithms from Big4 book, CodeWars, Leetcode, GeeksForGeeks and other tas
 * [Best Time to Buy and Sell Stock I](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) --> [Repository](LeetCode/Easy/src/best_time_to_buy_and_sell_stock.rs)
 * [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) --> [Repository](LeetCode/Easy/src/middle_of_the_linked_list.rs)*`linked list`*
 * [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/) --> [Repository](LeetCode/Easy/src/backspace_string_compare.rs)
+* [Min Stack](https://leetcode.com/problems/min-stack/) --> [Repository](LeetCode/Easy/src/min_stack.rs)
 
 
 ### Medium

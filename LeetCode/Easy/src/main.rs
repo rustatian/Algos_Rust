@@ -14,5 +14,6 @@ mod best_time_to_buy_and_sell_stock_2;
 mod best_time_to_buy_and_sell_stock;
 mod middle_of_the_linked_list;
 mod backspace_string_compare;
+mod min_stack;
 
 fn main() {}
