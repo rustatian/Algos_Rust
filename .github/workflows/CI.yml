@@ -12,25 +12,8 @@ env:
   RUST_BACKTRACE: full
 
 jobs:
-  build:
-    name: ${{ matrix.name }}
-    needs: [style]
-
-    runs-on: ${{ matrix.os }}
-
-    strategy:
-      matrix:
-        name:
-          - linux / stable
-          - linux / beta
-
-        include:
-          - name: linux / stable
-            os: ubuntu-latest
-            rust: stable
-          - name: linux / beta
-            os: ubuntu-latest
-            rust: beta
+  tests:
+    runs-on: ubuntu-latest
 
     steps:
       - name: Test_easy
