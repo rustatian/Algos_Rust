@@ -23,11 +23,11 @@ jobs:
         with:
           working-directory: ${{env.working-directory}}
           command: test
-          args: --manifest-path Easy/Cargo.toml
+          args: --manifest-path ./Easy/Cargo.toml
 
       - name: Test_medium
         uses: actions-rs/cargo@v1
         with:
           working-directory: ${{env.working-directory}}
           command: test
-          args: --manifest-path Medium/Cargo.toml
+          args: --manifest-path ./Medium/Cargo.toml
