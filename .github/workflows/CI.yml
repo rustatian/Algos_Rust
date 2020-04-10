@@ -20,14 +20,14 @@ jobs:
     steps:
       - name: Test_easy
         uses: actions-rs/cargo@v1
-        working-directory: ${{env.working-directory}}
         with:
+          working-directory: ${{env.working-directory}}
           command: test
           args: --manifest-path Easy/Cargo.toml
 
       - name: Test_medium
         uses: actions-rs/cargo@v1
-        working-directory: ${{env.working-directory}}
         with:
+          working-directory: ${{env.working-directory}}
           command: test
           args: --manifest-path Medium/Cargo.toml
