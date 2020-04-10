@@ -18,6 +18,9 @@ jobs:
       working-directory: ./LeetCode
 
     steps:
+      - name: Clean temp directory
+        run: pwd
+
       - name: Test_easy
         uses: actions-rs/cargo@v1
         with:
