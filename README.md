@@ -1,8 +1,6 @@
 # Rust LeetCode (mostly) solutions 
 [Working to solve the rest :) ]
 
-![CI](https://github.com/48d90782/Algos_Rust/workflows/CI/badge.svg)
-
 Also: Algorithms from Big4 book, CodeWars, Leetcode, GeeksForGeeks and other tasks for learning purposes implemented by myself in Rust
 
 # LeetCode
