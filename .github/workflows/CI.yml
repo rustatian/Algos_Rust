@@ -14,16 +14,20 @@ env:
 jobs:
   tests:
     runs-on: ubuntu-latest
+    env:
+      working-directory: ./LeetCode
 
     steps:
       - name: Test_easy
         uses: actions-rs/cargo@v1
+        working-directory: ${{env.working-directory}}
         with:
           command: test
-          args: --manifest-path ./LeetCode/Easy/Cargo.toml
+          args: --manifest-path Easy/Cargo.toml
 
       - name: Test_medium
         uses: actions-rs/cargo@v1
+        working-directory: ${{env.working-directory}}
         with:
           command: test
-          args: --manifest-path ./LeetCode/Medium/Cargo.toml
+          args: --manifest-path Medium/Cargo.toml
