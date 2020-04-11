@@ -22,6 +22,8 @@ Also: Algorithms from Big4 book, CodeWars, Leetcode, GeeksForGeeks and other tas
 * [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) --> [Repository](LeetCode/Easy/src/middle_of_the_linked_list.rs)*`linked list`*
 * [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/) --> [Repository](LeetCode/Easy/src/backspace_string_compare.rs)
 * [Min Stack](https://leetcode.com/problems/min-stack/) --> [Repository](LeetCode/Easy/src/min_stack.rs)
+* [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/) --> [Repository](LeetCode/Easy/src/min_stack.rs)
+
 
 
 ### Medium
