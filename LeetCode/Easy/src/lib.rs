@@ -16,3 +16,4 @@ mod middle_of_the_linked_list;
 mod backspace_string_compare;
 mod min_stack;
 mod diameter_of_binary_tree;
+mod last_stone_weight;

@@ -23,7 +23,7 @@ Also: Algorithms from Big4 book, CodeWars, Leetcode, GeeksForGeeks and other tas
 * [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/) --> [Repository](LeetCode/Easy/src/backspace_string_compare.rs)
 * [Min Stack](https://leetcode.com/problems/min-stack/) --> [Repository](LeetCode/Easy/src/min_stack.rs)
 * [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/) --> [Repository](LeetCode/Easy/src/diameter_of_binary_tree.rs)*`BT`*
-
+* [Last Stone Weight](https://leetcode.com/problems/last-stone-weight/) --> [Repository](LeetCode/Easy/src/last_stone_weight.rs)*`Binary Heap`*
 
 
 ### Medium
