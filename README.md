@@ -29,6 +29,7 @@ Also: Algorithms from Big4 book, CodeWars, Leetcode, GeeksForGeeks and other tas
 * [Group Anagrams](https://leetcode.com/problems/group-anagrams/) --> [Repository](LeetCode/Medium/src/group_anagrams.rs)
 * [Counting Elements](https://leetcode.com/explore/challenge/card/30-day-leetcoding-challenge/528/week-1/3289/) --> [Repository](LeetCode/Medium/src/counting_elements.rs) *`contest`*
 * [Contiguous Array](https://leetcode.com/problems/contiguous-array/) --> [Repository](LeetCode/Medium/src/contiguous_array.rs) *`Hash table`*
+* [Perform String Shifts](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/529/week-2/3299/) --> [Repository](LeetCode/Medium/src/strings_shift.rs) *`contest`*
 
 ### Hard
 [working on it]
