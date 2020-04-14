@@ -28,9 +28,37 @@ impl Solution {
     pub fn find_max_length(nums: Vec<i32>) -> i32 {
         use std::collections::HashMap;
         let nums_len = nums.len();
+        let mut max_idx = 0;
+        let mut arr: Vec<i32> = Vec::with_capacity(nums.len());
+        let mut hash: HashMap<i32, i32> = HashMap::new();
 
-        todo!("solve");
-        1
+
+        for num in &nums {
+            if *num == 0 {
+                arr.push(-1)
+            } else {
+                arr.push(1)
+            }
+        }
+
+        let mut idx: i32 = 0;
+        let mut sum = 0;
+        while idx < nums_len as i32 {
+            sum += arr[idx as usize];
+            if sum == 0 {
+                max_idx = idx + 1;
+            }
+            if hash.contains_key(&(sum + nums_len as i32)) {
+                if max_idx < idx - hash.get(&(sum + nums_len as i32)).unwrap() {
+                    max_idx = idx - hash.get(&(sum + nums_len as i32)).unwrap();
+                }
+            } else {
+                hash.insert(sum + nums_len as i32, idx);
+            }
+            idx += 1;
+        }
+
+        max_idx
     }
 }
 
@@ -38,4 +66,5 @@ impl Solution {
 fn tests() {
     assert_eq!(Solution::find_max_length(vec![0, 1]), 2);
     assert_eq!(Solution::find_max_length(vec![0, 0, 1, 0, 0, 0, 1, 1]), 6);
+    assert_eq!(Solution::find_max_length(vec![1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]), 6);
 }
