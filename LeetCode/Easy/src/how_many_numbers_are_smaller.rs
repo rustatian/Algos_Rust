@@ -48,8 +48,5 @@ impl Solution {
 
 #[test]
 pub fn smalltest() {
-    assert_eq!(
-        vec![4, 0, 1, 1, 3],
-        Solution::smaller_numbers_than_current(vec![8, 1, 2, 2, 3])
-    )
+    assert_eq!(Solution::smaller_numbers_than_current(vec![8, 1, 2, 2, 3]), vec![4, 0, 1, 1, 3]);
 }
