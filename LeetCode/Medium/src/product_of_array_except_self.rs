@@ -33,9 +33,22 @@ impl Solution {
 
         res
     }
+
+    pub fn product_except_self_divide(nums: Vec<i32>) -> Vec<i32> {
+        let mut res = vec![];
+
+        let max: i32 = nums.iter().product();
+
+        for (_, n) in nums.iter().enumerate() {
+            res.push(max / n);
+        }
+
+        res
+    }
 }
 
 #[test]
 fn tests() {
     assert_eq!(Solution::product_except_self(vec![1, 2, 3, 4]), vec![24, 12, 8, 6]);
+    assert_eq!(Solution::product_except_self_divide(vec![1, 2, 3, 4]), vec![24, 12, 8, 6]);
 }
