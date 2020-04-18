@@ -32,6 +32,8 @@ Also: Algorithms from Big4 book, CodeWars, Leetcode, GeeksForGeeks and other tas
 * [Perform String Shifts](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/529/week-2/3299/) -->  [Repository](LeetCode/Medium/src/strings_shift.rs) *`contest`*
 * [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) -->                       [Repository](LeetCode/Medium/src/product_of_array_except_self.rs)
 * [Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/) -->                               [Repository](LeetCode/Medium/src/valid_parenthesis_string.rs)
+* [Number of Islands](https://leetcode.com/problems/number-of-islands/) -->                                             [Repository](LeetCode/Medium/docs/number_of_islands.md)
+* [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/) -->                                               [Repository](LeetCode/Medium/docs/minimum_path_sum.md)
 
 
 ### Hard
