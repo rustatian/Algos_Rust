@@ -1,6 +1,8 @@
 # Rust LeetCode (mostly) solutions 
 [Working to solve the rest :) ]
 
+GitHub pages link: [BOOM](https://48d90782.github.io/Algos_Rust/)
+
 Also: Algorithms from Big4 book, CodeWars, Leetcode, GeeksForGeeks and other tasks for learning purposes implemented by myself in Rust
 
 # LeetCode
