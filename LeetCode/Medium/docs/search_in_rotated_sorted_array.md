@@ -18,6 +18,9 @@ Example 2:
 Input: nums = [4,5,6,7,0,1,2], target = 3
 Output: -1
 
+To solve in O(log n) time we need Binary search algorithm: [WIKI](https://en.wikipedia.org/wiki/Binary_search_algorithm)
+But slightly updated.
+
 ```rust
 struct Solution {}
 
