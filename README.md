@@ -27,6 +27,7 @@ Also: Algorithms from Big4 book, CodeWars, Leetcode, GeeksForGeeks and other tas
 * [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/) -->                                                          [Repository](LeetCode/Easy/src/diameter_of_binary_tree.rs) *`BT`*
 * [Last Stone Weight](https://leetcode.com/problems/last-stone-weight/) -->                                                                      [Repository](LeetCode/Easy/src/last_stone_weight.rs) *`Binary Heap`*
 
+-----------------------------------------------------------------------------------------------------------------------------
 ### Medium
 * [Group Anagrams](https://leetcode.com/problems/group-anagrams/) -->                                                   [Repository](LeetCode/Medium/src/group_anagrams.rs)
 * [Counting Elements](https://leetcode.com/explore/challenge/card/30-day-leetcoding-challenge/528/week-1/3289/) -->     [Repository](LeetCode/Medium/src/counting_elements.rs) *`contest`*
@@ -38,6 +39,6 @@ Also: Algorithms from Big4 book, CodeWars, Leetcode, GeeksForGeeks and other tas
 * [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/) -->                                               [Repository](LeetCode/Medium/docs/minimum_path_sum.md)
 * [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) -->                   [Repository](LeetCode/Medium/docs/search_in_rotated_sorted_array.md)
 
-
+-----------------------------------------------------------------------------------------------------------------------------
 ### Hard
 [working on it]
