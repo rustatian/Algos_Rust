@@ -34,6 +34,7 @@ Also: Algorithms from Big4 book, CodeWars, Leetcode, GeeksForGeeks and other tas
 * [Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/) -->                               [Repository](LeetCode/Medium/src/valid_parenthesis_string.rs)
 * [Number of Islands](https://leetcode.com/problems/number-of-islands/) -->                                             [Repository](LeetCode/Medium/docs/number_of_islands.md)
 * [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/) -->                                               [Repository](LeetCode/Medium/docs/minimum_path_sum.md)
+* [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) -->                   [Repository](LeetCode/Medium/docs/search_in_rotated_sorted_array.md)
 
 
 ### Hard

@@ -6,3 +6,4 @@ mod product_of_array_except_self;
 mod valid_parenthesis_string;
 mod number_of_islands;
 mod minimum_path_sum;
+mod search_in_rotated_sorted_array;
