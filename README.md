@@ -38,6 +38,7 @@ Also: Algorithms from Big4 book, CodeWars, Leetcode, GeeksForGeeks and other tas
 * [Number of Islands](https://leetcode.com/problems/number-of-islands/) -->                                             [Repository](LeetCode/Medium/docs/number_of_islands.md)
 * [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/) -->                                               [Repository](LeetCode/Medium/docs/minimum_path_sum.md)
 * [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) -->                   [Repository](LeetCode/Medium/docs/search_in_rotated_sorted_array.md)
+* [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) -->                                     [Repository](LeetCode/Medium/docs/leftmost_columt_with_at_least_a_one.md)*`-contest-`*
 
 -----------------------------------------------------------------------------------------------------------------------------
 ### Hard
