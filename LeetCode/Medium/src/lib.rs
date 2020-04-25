@@ -10,3 +10,5 @@ mod search_in_rotated_sorted_array;
 // mod construct_binary_tree_from_preorder_traversal;
 mod leftmost_columt_with_at_least_a_one;
 mod bitwise_and_of_numbers_range;
+mod lru_cache;
+mod jump_game;

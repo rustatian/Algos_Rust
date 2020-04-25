@@ -12,12 +12,13 @@ impl Solution {
             shift += 1;
         }
 
-        mr << shift
+        nr << shift
     }
 }
 
 #[test]
 fn tests() {
+    assert_eq!(Solution::range_bitwise_and(9, 25), 0);
     assert_eq!(Solution::range_bitwise_and(9, 12), 8);
     assert_eq!(Solution::range_bitwise_and(5, 7), 4);
     assert_eq!(Solution::range_bitwise_and(0, 2), 0);
