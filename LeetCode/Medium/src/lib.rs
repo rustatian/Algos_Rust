@@ -12,3 +12,4 @@ mod leftmost_columt_with_at_least_a_one;
 mod bitwise_and_of_numbers_range;
 mod lru_cache;
 mod jump_game;
+mod longest_common_subsequence;

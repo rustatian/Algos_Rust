@@ -5,7 +5,7 @@ impl Solution {
         // GREEDY
         let mut l = nums.len() - 1;
 
-        let mut idx:i32 = nums.len() as i32 -1;
+        let mut idx: i32 = nums.len() as i32 - 1;
 
         loop {
             if idx < 0 {
@@ -14,7 +14,7 @@ impl Solution {
             if idx + nums[idx as usize] >= l as i32 {
                 l = idx as usize;
             }
-            idx -=1;
+            idx -= 1;
         }
 
         l == 0
