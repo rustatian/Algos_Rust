@@ -13,3 +13,4 @@ mod bitwise_and_of_numbers_range;
 mod lru_cache;
 mod jump_game;
 mod longest_common_subsequence;
+mod first_unique_number;
