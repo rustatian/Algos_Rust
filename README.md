@@ -7,9 +7,9 @@ Also: Algorithms from Big4 book, CodeWars, Leetcode, GeeksForGeeks and other tas
 
 # LeetCode
 ### Easy
-* [Remove Vowels from a String](https://leetcode.com/problems/remove-vowels-from-a-string) -->                                                   [Repository](LeetCode/Easy/src/)
+* [Remove Vowels from A String](https://leetcode.com/problems/remove-vowels-from-A-string) -->                                                   [Repository](LeetCode/Easy/src/)
 * [Defanging an IP Address](https://leetcode.com/problems/defanging-an-ip-address) -->                                                           [Repository](LeetCode/Easy/docs/defanging-an-ip-address.md)
-* [Number of Steps to Reduce a Number to Zero](https://leetcode.com/problems/remove-vowels-from-a-string) -->                                    [Repository](LeetCode/Easy/src/number_of_steps.rs)
+* [Number of Steps to Reduce A Number to Zero](https://leetcode.com/problems/remove-vowels-from-A-string) -->                                    [Repository](LeetCode/Easy/src/number_of_steps.rs)
 * [How Many Numbers Are Smaller Than the Current Number](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number) --> [Repository](LeetCode/Easy/src/how_many_numbers_are_smaller.rs)
 * [Decompress Run-Length Encoded List](https://leetcode.com/problems/decompress-run-length-encoded-list) -->                                     [Repository](LeetCode/Easy/src/decompress_run_length_encoded_list.rs)
 * [Single-Row Keyboard](https://leetcode.com/problems/single-row-keyboard) -->                                                                   [Repository](LeetCode/Easy/src/single_row_keyboard.rs) *`hash table`*

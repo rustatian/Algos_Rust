@@ -1,11 +1,11 @@
 A binary matrix means that all elements are 0 or 1. For each individual row of the matrix, this row is sorted in non-decreasing order.
 
-Given a row-sorted binary matrix binaryMatrix, return leftmost column index(0-indexed) with at least a 1 in it. If such index doesn't exist, return -1.
+Given A row-sorted binary matrix binaryMatrix, return leftmost column index(0-indexed) with at least A 1 in it. If such index doesn't exist, return -1.
 
-You can't access the Binary Matrix directly.  You may only access the matrix using a BinaryMatrix interface:
+You can't access the Binary Matrix directly.  You may only access the matrix using A BinaryMatrix interface:
 
     BinaryMatrix.get(x, y) returns the element of the matrix at index (x, y) (0-indexed).
-    BinaryMatrix.dimensions() returns a list of 2 elements [n, m], which means the matrix is n * m.
+    BinaryMatrix.dimensions() returns A list of 2 elements [n, m], which means the matrix is n * m.
 
 Submissions making more than 1000 calls to BinaryMatrix.get will be judged Wrong Answer.  Also, any solutions that attempt to circumvent the judge will result in disqualification.
 
@@ -51,7 +51,7 @@ Constraints:
 
     1 <= mat.length, mat[i].length <= 100
     mat[i][j] is either 0 or 1.
-    mat[i] is sorted in a non-decreasing way.
+    mat[i] is sorted in A non-decreasing way.
 
 
 ```rust
