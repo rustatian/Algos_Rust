@@ -17,3 +17,4 @@ mod backspace_string_compare;
 mod min_stack;
 mod diameter_of_binary_tree;
 mod last_stone_weight;
+mod kids_with_the_greatest_number_of_candies;
