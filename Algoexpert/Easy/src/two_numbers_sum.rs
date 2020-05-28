@@ -21,5 +21,8 @@ impl Solution {
 
 #[test]
 fn tests() {
-    assert_eq!(Solution::two_numbers_sum(vec![3, 5, -4, 8, 11, 1, -1, 6], 10), Some([-1, 11]));
+    assert_eq!(
+        Solution::two_numbers_sum(vec![3, 5, -4, 8, 11, 1, -1, 6], 10),
+        Some([-1, 11])
+    );
 }
