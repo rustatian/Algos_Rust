@@ -1,5 +1,4 @@
 use std::rc::Rc;
-use std::borrow::Borrow;
 
 struct Three {
     name: String,
@@ -25,14 +24,17 @@ impl Three {
 
 #[test]
 fn test() {
-    let mut b = Three {
+    let b = Three {
         name: "B".to_string(),
         children: None,
     };
 
-    let mut n = Three {
+    let n = Three {
         name: "A".to_string(),
         children: Option::from(Rc::new(b)),
     };
-    assert_eq!(Three::dfs(Option::from(Rc::new(n))), vec!["A".to_string(), "B".to_string()]);
+    assert_eq!(
+        Three::dfs(Option::from(Rc::new(n))),
+        vec!["A".to_string(), "B".to_string()]
+    );
 }
