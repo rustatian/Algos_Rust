@@ -23,8 +23,9 @@ impl BinaryTree {
         if nodes.is_none() {
             return;
         }
-        let new_sum = sum + nodes.as_ref().unwrap().value;
+
         let d = nodes.as_ref().unwrap();
+        let new_sum = sum + d.value;
         if d.left.is_none() && d.right.is_none() {
             data.push(new_sum);
             return;
