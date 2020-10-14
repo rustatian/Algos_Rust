@@ -13,7 +13,7 @@ impl BinaryTree {
     }
 
     fn nodes_sums(root: &Option<Rc<BinaryTree>>) -> i32 {
-        let mut depth = 0;
+        let depth = 0;
         let mut sum = 0;
         BinaryTree::nodes_sums_helper(root, depth, &mut sum);
         sum
