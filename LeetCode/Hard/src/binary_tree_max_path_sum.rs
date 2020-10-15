@@ -32,7 +32,7 @@ impl Solution {
 
     fn max_gain(max_sum: &mut i32, node: Option<Rc<RefCell<TreeNode>>>) {
         if node.is_none() {
-            max_sum = 0;
+            *max_sum = 0;
             return;
         }
     }
