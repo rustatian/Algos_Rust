@@ -15,7 +15,7 @@ impl ProductSum {
 
         1
     }
-    fn helper(data: Box<dyn Any>, mul: i32) -> i32 {
+    fn helper(_data: Box<dyn Any>, _mul: i32) -> i32 {
         /*
         sum = 0
         for d in data:
