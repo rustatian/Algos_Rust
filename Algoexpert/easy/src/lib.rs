@@ -8,3 +8,4 @@ mod product_sum;
 mod binary_search;
 mod three_largest_nums;
 mod bubble_sort;
+mod insertion_sort;
