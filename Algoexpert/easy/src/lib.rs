@@ -9,3 +9,4 @@ mod binary_search;
 mod three_largest_nums;
 mod bubble_sort;
 mod insertion_sort;
+mod selection_sort;
