@@ -1,13 +1,13 @@
 #![allow(dead_code)]
+mod binary_search;
 mod branch_sums;
+mod bubble_sort;
 mod dfs;
-mod two_numbers_sum;
+mod insertion_sort;
 mod nodes_sum;
 mod nth_fibo;
-mod product_sum;
-mod binary_search;
-mod three_largest_nums;
-mod bubble_sort;
-mod insertion_sort;
-mod selection_sort;
 mod palindrome_check;
+mod product_sum;
+mod selection_sort;
+mod three_largest_nums;
+mod two_numbers_sum;

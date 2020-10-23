@@ -30,6 +30,9 @@ mod tests {
 
     #[test]
     fn test() {
-        assert_eq!(SelectionSort::sort(vec![8, 5, 2, 9, 5, 6, 3]), vec![2, 3, 5, 5, 6, 8, 9])
+        assert_eq!(
+            SelectionSort::sort(vec![8, 5, 2, 9, 5, 6, 3]),
+            vec![2, 3, 5, 5, 6, 8, 9]
+        )
     }
 }

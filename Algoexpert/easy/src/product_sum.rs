@@ -2,7 +2,6 @@ use std::any::{Any, TypeId};
 
 struct ProductSum {}
 
-
 impl ProductSum {
     fn product_sum(data: Box<dyn Any>) -> i32 {
         println!("{:?}", data.type_id());
@@ -30,15 +29,20 @@ impl ProductSum {
     }
 }
 
-
 #[cfg(test)]
 mod tests {
-    use std::any::Any;
     use crate::product_sum::ProductSum;
+    use std::any::Any;
 
     #[test]
     fn test() {
-        let v: Box<dyn Any> = Box::new((vec![5], vec![2], vec![7, -1], vec![3], vec![vec![6], vec![-13, 8], vec![4]]));
+        let v: Box<dyn Any> = Box::new((
+            vec![5],
+            vec![2],
+            vec![7, -1],
+            vec![3],
+            vec![vec![6], vec![-13, 8], vec![4]],
+        ));
         let res = ProductSum::product_sum(v);
         assert_eq!(res, 12);
     }

@@ -37,8 +37,8 @@ impl BinaryTree {
 
 #[cfg(test)]
 mod tests {
-    use std::rc::Rc;
     use crate::nodes_sum::BinaryTree;
+    use std::rc::Rc;
 
     #[test]
     fn test() {
@@ -51,11 +51,7 @@ mod tests {
                     Option::from(Rc::from(BinaryTree::new(8, None, None))),
                     Option::from(Rc::from(BinaryTree::new(9, None, None))),
                 ))),
-                Option::from(Rc::from(BinaryTree::new(
-                    5,
-                    None,
-                    None,
-                ))),
+                Option::from(Rc::from(BinaryTree::new(5, None, None))),
             ))),
             Option::from(Rc::from(BinaryTree::new(
                 3,

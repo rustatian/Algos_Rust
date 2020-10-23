@@ -1,8 +1,7 @@
-use std::ops::Index;
 use std::cmp::Ordering;
+use std::ops::Index;
 
 struct BinarySearch {}
-
 
 impl BinarySearch {
     fn binary_search(n: Vec<i32>, target: i32) -> i32 {
@@ -21,15 +20,9 @@ impl BinarySearch {
         let num = n.index(index as usize);
 
         match (*num).cmp(&target) {
-            Ordering::Greater => {
-                BinarySearch::recursive_helper(n, target, left, index - 1)
-            }
-            Ordering::Equal => {
-                index
-            }
-            _ => {
-                BinarySearch::recursive_helper(n, target, index + 1, right)
-            }
+            Ordering::Greater => BinarySearch::recursive_helper(n, target, left, index - 1),
+            Ordering::Equal => index,
+            _ => BinarySearch::recursive_helper(n, target, index + 1, right),
         }
     }
 

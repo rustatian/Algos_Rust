@@ -14,7 +14,6 @@ impl PalindromeCheck {
             }
             return false;
         }
-
         true
     }
 }
