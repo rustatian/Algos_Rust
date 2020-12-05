@@ -17,7 +17,7 @@ mod test {
         // println!("threes: {}", res);
         //
         let mut num_thees = 0;
-        let data = include_str!("../data/day3.txt")
+        let data = include_str!("../../data/day3.txt")
             .lines()
             .step_by(1)
             .enumerate();
@@ -37,3 +37,5 @@ mod test {
         println!("threes: {}", num_thees);
     }
 }
+
+fn main() {}

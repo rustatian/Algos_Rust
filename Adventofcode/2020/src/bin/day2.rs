@@ -59,3 +59,5 @@ mod test {
         println!("correct: {}", correct_2);
     }
 }
+
+fn main() {}

@@ -55,3 +55,7 @@ mod tests {
         }
     }
 }
+
+fn main() {
+
+}
