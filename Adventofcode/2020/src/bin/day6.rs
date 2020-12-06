@@ -1,5 +1,3 @@
-use itertools::Itertools;
-use std::borrow::Borrow;
 use std::collections::HashSet;
 use std::fs::File;
 use std::io::{BufRead, BufReader};
@@ -46,10 +44,8 @@ fn part_2(br: BufReader<File>) -> usize {
         let ll = l.unwrap();
         if ll.is_empty() {
             if binary_and.is_some() {
-                let data = binary_and.take().unwrap();
-                for _ in data {
-                    total += 1;
-                }
+                let data: HashSet<char> = binary_and.take().unwrap();
+                total += data.len();
                 binary_and = None;
             }
             continue;

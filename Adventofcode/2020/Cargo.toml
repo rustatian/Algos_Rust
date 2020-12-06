@@ -9,7 +9,6 @@ edition = "2018"
 [lib]
 
 [dependencies]
-itertools = "0.9.0"
 
 [[bin]]
 name = "day1"
