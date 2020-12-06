@@ -19,6 +19,8 @@ fn main() {
         }
     }
 
+    println!("max ID is: {}", max_id);
+    
     v.sort_unstable();
 
     for seats in v.windows(2) {
@@ -26,8 +28,6 @@ fn main() {
             println!("seat: {}", seats[0] + 1);
         }
     }
-
-    println!("max ID is: {}", max_id);
 }
 
 struct Parser {}

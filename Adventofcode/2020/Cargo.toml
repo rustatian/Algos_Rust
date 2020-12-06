@@ -9,6 +9,7 @@ edition = "2018"
 [lib]
 
 [dependencies]
+itertools = "0.9.0"
 
 [[bin]]
 name = "day1"
@@ -29,3 +30,7 @@ path = "src/bin/day4.rs"
 [[bin]]
 name = "day5"
 path = "src/bin/day5.rs"
+
+[[bin]]
+name = "day6"
+path = "src/bin/day6.rs"
