@@ -36,7 +36,7 @@ fn part_1(br: BufReader<File>) -> usize {
     total_yes
 }
 
-// using binary AND
+// using bitwise AND
 fn part_2(br: BufReader<File>) -> usize {
     let mut binary_and = None;
     let mut total = 0;
@@ -51,7 +51,7 @@ fn part_2(br: BufReader<File>) -> usize {
             continue;
         }
 
-        let line: HashSet<_> = ll.chars().collect();
+        let line: HashSet<char> = ll.chars().collect();
         if let Some(binary_and) = binary_and.as_mut() {
             *binary_and = &*binary_and & &line;
         } else {
