@@ -15,6 +15,18 @@ impl FDV {
 
         -1
     }
+
+    pub fn solve_smart(data: &mut [i32]) -> i32 {
+        for i in 0..data.len() {
+            let index = data[i].abs();
+            if data[(index - 1) as usize] > 0 {
+                return index;
+            }
+            data[(index - 1) as usize] *= -1;
+        }
+
+        1
+    }
 }
 
 #[cfg(test)]
@@ -25,5 +37,7 @@ mod tests {
     fn test() {
         let mut data = [2, 1, 5, 2, 3, 3, 4];
         assert_eq!(FDV::solve(&mut data), 2);
+
+        assert_eq!(FDV::solve_smart(&mut data), 2);
     }
 }
