@@ -24,8 +24,7 @@ impl FDV {
             }
             data[(index - 1) as usize] *= -1;
         }
-
-        1
+        -1
     }
 }
 
