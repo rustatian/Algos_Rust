@@ -17,12 +17,12 @@ impl CaesarCipherEncryption {
             if target[i] >= b'a' && target[i] <= b'z' {
                 target[i] += shift as u8;
             } else {
-                target[i] = target[i] + shift as u8 - offset;
+                target[i] += shift as u8 - offset;
             }
             i += 1;
         }
 
-        target.iter_mut().map(|x| *x as char).collect::<String>()
+        target.iter_mut().map(|x| *x as char).collect()
     }
 }
 
