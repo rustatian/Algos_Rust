@@ -13,3 +13,4 @@ mod three_largest_nums;
 mod two_numbers_sum;
 mod caesar_cipher_encryption;
 mod first_non_repeating;
+mod minimum_wait_time;
