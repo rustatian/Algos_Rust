@@ -1,21 +1,37 @@
-mod decompress_run_length_encoded_list;
-mod defanging_an_ip_address;
-mod even_number_of_digits;
-mod how_many_numbers_are_smaller;
-mod num_jewels_in_stones;
-mod number_of_steps;
-mod single_row_keyboard;
-mod subtract_the_product_and_sum_of_digits_of_an_integer;
-mod single_number;
-mod happy_number;
-mod maximum_subarray;
-mod move_zeros;
-mod best_time_to_buy_and_sell_stock_2;
-mod best_time_to_buy_and_sell_stock;
-mod middle_of_the_linked_list;
-mod backspace_string_compare;
-mod min_stack;
-mod diameter_of_binary_tree;
-mod last_stone_weight;
-mod kids_with_the_greatest_number_of_candies;
-mod pre_order_traversal;
+use std::collections::HashMap;
+
+mod two_sum;
+
+struct Solution{}
+
+impl Solution {
+    pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
+        let mut data = HashMap::new();
+
+        for (k, v) in nums.iter().enumerate() {
+            let diff = target - v;
+
+            if data.contains_key(&diff) {
+                return Vec::from([*data.get(&diff).unwrap() as i32, (k as i32)]);
+            }
+
+            data.insert(v, k);
+        }
+
+        vec![]
+    }
+}
+
+
+#[cfg(test)]
+mod tests {
+    use crate::Solution;
+
+    #[test]
+    fn test() {
+        let vector = vec![2,7,11,15];
+
+        let res = Solution::two_sum(vector, 9);
+        println!("{:?}", res);
+    }
+}
