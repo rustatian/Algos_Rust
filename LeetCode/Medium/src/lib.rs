@@ -1,3 +1,5 @@
+extern crate core;
+
 mod group_anagrams;
 mod counting_elements;
 mod contiguous_array;
@@ -14,3 +16,4 @@ mod lru_cache;
 mod jump_game;
 mod longest_common_subsequence;
 mod first_unique_number;
+mod roman_to_integer;
