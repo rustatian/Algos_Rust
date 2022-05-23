@@ -32,18 +32,18 @@ impl Solution {
             // if cur element not the last
             if let Some(val) = v.front() {
                 // MM case or XI case
-                if symbol_to_int(&[ch]) >= symbol_to_int(&[*val]) {
-                    res += symbol_to_int(&[ch]);
+                if symbol_to_int(ch) >= symbol_to_int(*val) {
+                    res += symbol_to_int(ch);
                     continue;
                     // case like IX
                     // I - ch
                     // X - val
-                } else if symbol_to_int(&[ch]) < symbol_to_int(&[*val]) {
-                    res += symbol_to_int(&[v.pop_front().unwrap()]) - symbol_to_int(&[ch]);
+                } else if symbol_to_int(ch) < symbol_to_int(*val) {
+                    res += symbol_to_int(v.pop_front().unwrap()) - symbol_to_int(ch);
                     continue;
                 }
             } else {
-                res += symbol_to_int(&[ch]);
+                res += symbol_to_int(ch);
                 continue;
             }
         }
@@ -51,24 +51,19 @@ impl Solution {
     }
 }
 
-fn symbol_to_int(chr: &[char]) -> i32 {
-    let mut res = 0;
-    for s in chr {
-        match s {
-            'I' => res += 1,
-            'V' => res += 5,
-            'X' => res += 10,
-            'L' => res += 50,
-            'C' => res += 100,
-            'D' => res += 500,
-            'M' => res += 1000,
-            _ => {
-                panic!("unknown chan");
-            }
+fn symbol_to_int(chr: char) -> i32 {
+    match chr {
+        'I' => 1,
+        'V' => 5,
+        'X' => 10,
+        'L' => 50,
+        'C' => 100,
+        'D' => 500,
+        'M' => 1000,
+        _ => {
+            panic!("unknown chan");
         }
     }
-
-    res
 }
 
 #[cfg(test)]
