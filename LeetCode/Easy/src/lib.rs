@@ -4,3 +4,4 @@ mod valid_parentheses;
 mod abbreviation;
 mod longest_prefix;
 mod palindrome_2;
+mod range_sum_bst;

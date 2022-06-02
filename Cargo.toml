@@ -10,4 +10,6 @@ members = [
     "LeetCode/Easy",
     "LeetCode/Hard",
     "LeetCode/Medium",
+    "hackers_delight",
+    "intro_to_algos"
 ]
