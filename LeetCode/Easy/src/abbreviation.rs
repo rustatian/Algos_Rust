@@ -78,6 +78,6 @@ mod tests {
     fn test() {
         let res =
             Solution::valid_word_abbreviation("hi".into(), "2i".into());
-        assert!(res);
+        assert!(!res);
     }
 }
