@@ -23,33 +23,38 @@ movingAverage.next(3); // return 4.66667 = (1 + 10 + 3) / 3
 movingAverage.next(5); // return 6.0 = (10 + 3 + 5) / 3
 */
 
+use std::collections::VecDeque;
+
 struct MovingAverage {
     window: i32,
-    data: Vec<i32>,
+    sum: i32,
+    data: VecDeque<i32>,
 }
 
 impl MovingAverage {
     fn new(size: i32) -> Self {
         Self {
+            sum: 0,
             window: size,
-            data: vec![],
+            data: VecDeque::new(),
         }
     }
 
     fn next(&mut self, val: i32) -> f64 {
-        self.data.push(val);
+        self.data.push_front(val);
+        let divider: f64 = std::cmp::min(self.data.len() as i32, self.window) as f64;
 
-        let divider: i32 = {
-            if self.data.len() < self.window as usize {
-                self.data.len() as i32
+        let num = {
+            if self.data.len() > self.window as usize {
+                self.data.pop_back().unwrap()
             } else {
-                self.window
+                0
             }
         };
 
-        let sum: i32 = self.data.iter().rev().take(self.window as usize).sum();
+        self.sum = self.sum - num + val;
 
-        sum as f64/ divider as f64
+        self.sum as f64 / divider as f64
     }
 }
 
