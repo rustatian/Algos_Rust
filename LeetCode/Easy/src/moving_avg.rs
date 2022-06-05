@@ -44,6 +44,7 @@ impl MovingAverage {
         self.data.push_front(val);
         let divider: f64 = std::cmp::min(self.data.len() as i32, self.window) as f64;
 
+        // we should sub the last element from the sum to calculate a new sum
         let num = {
             if self.data.len() > self.window as usize {
                 self.data.pop_back().unwrap()
@@ -53,7 +54,6 @@ impl MovingAverage {
         };
 
         self.sum = self.sum - num + val;
-
         self.sum as f64 / divider as f64
     }
 }

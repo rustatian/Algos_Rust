@@ -11,3 +11,4 @@ mod bin_search;
 mod uniq_occurr;
 mod max_stack;
 mod moving_avg;
+mod contains_duplicates;
