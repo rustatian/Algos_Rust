@@ -13,3 +13,4 @@ mod max_stack;
 mod moving_avg;
 mod contains_duplicates;
 mod merge_two_sorted_lists;
+mod remove_duplicates;
