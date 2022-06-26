@@ -14,3 +14,5 @@ mod moving_avg;
 mod contains_duplicates;
 mod merge_two_sorted_lists;
 mod remove_duplicates;
+mod palindrome_ll;
+mod binary_substrings;
