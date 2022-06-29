@@ -16,3 +16,8 @@ mod merge_two_sorted_lists;
 mod remove_duplicates;
 mod palindrome_ll;
 mod binary_substrings;
+mod add_strings;
+mod count_odds;
+mod reformat_date;
+mod logger_rate_limiter;
+mod valid_palindrome;
