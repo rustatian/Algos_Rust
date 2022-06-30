@@ -21,3 +21,4 @@ mod count_odds;
 mod reformat_date;
 mod logger_rate_limiter;
 mod valid_palindrome;
+mod first_unique_char;
