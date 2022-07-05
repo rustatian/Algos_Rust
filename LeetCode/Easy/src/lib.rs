@@ -1,5 +1,4 @@
 #![warn(dead_code)]
-
 mod palindrome;
 mod two_sum;
 mod valid_parentheses;
@@ -22,3 +21,7 @@ mod reformat_date;
 mod logger_rate_limiter;
 mod valid_palindrome;
 mod first_unique_char;
+mod degree_on_an_array;
+mod can_place_flowers;
+mod pascals_triangle;
+mod pascals_triangle_2;
