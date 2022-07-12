@@ -25,3 +25,6 @@ mod degree_on_an_array;
 mod can_place_flowers;
 mod pascals_triangle;
 mod pascals_triangle_2;
+mod climbing_stairs;
+mod guess_number;
+mod search_insert_position;
