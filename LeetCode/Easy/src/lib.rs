@@ -1,4 +1,7 @@
-#![warn(dead_code)]
+#![allow(dead_code)]
+#![allow(unused_assignments)]
+#![allow(non_snake_case)]
+
 mod palindrome;
 mod two_sum;
 mod valid_parentheses;
@@ -21,10 +24,12 @@ mod reformat_date;
 mod logger_rate_limiter;
 mod valid_palindrome;
 mod first_unique_char;
-mod degree_on_an_array;
 mod can_place_flowers;
 mod pascals_triangle;
 mod pascals_triangle_2;
 mod climbing_stairs;
 mod guess_number;
 mod search_insert_position;
+mod valid_perfect_square;
+mod sqrt;
+mod find_smallest_letter;

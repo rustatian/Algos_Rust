@@ -22,7 +22,7 @@ fn guess(num: i32) -> i32 {
 }
 
 impl Solution {
-    fn guessNumber(n: i32) -> i32 {
+    fn guess_number(n: i32) -> i32 {
         if guess(n) == 0 {
             return n;
         }
@@ -59,6 +59,6 @@ mod tests {
 
     #[test]
     fn test() {
-        assert_eq!(1150769282, Solution::guessNumber(1420736637));
+        assert_eq!(1150769282, Solution::guess_number(1420736637));
     }
 }

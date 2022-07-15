@@ -1,5 +1,3 @@
-use std::fmt::Alignment::Left;
-
 struct Solution {}
 
 impl Solution {

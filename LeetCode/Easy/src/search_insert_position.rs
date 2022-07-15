@@ -6,21 +6,21 @@ impl Solution {
         let mut left: i32 = 0;
         let mut right: i32 = (nums.len() - 1) as i32;
 
-        while (left <= right) {
+        while left <= right {
             pivot = left + (right - left) / 2;
 
             if nums[pivot as usize] == target {
                 return pivot as i32;
             }
 
-            if (target < nums[pivot as usize]) {
+            if target < nums[pivot as usize] {
                 right = pivot - 1;
             } else {
                 left = pivot + 1;
             }
         }
 
-        return left as i32;
+        left as i32
     }
 }
 

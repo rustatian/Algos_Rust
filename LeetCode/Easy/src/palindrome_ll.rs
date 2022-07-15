@@ -2,8 +2,6 @@
 Given the head of a singly linked list, return true if it is a palindrome.
  */
 
-use std::borrow::Borrow;
-
 // Definition for singly-linked list.
 #[derive(PartialEq, Eq, Clone, Debug)]
 pub struct ListNode {

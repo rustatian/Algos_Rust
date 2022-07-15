@@ -7,7 +7,7 @@ impl Solution {
     pub fn first_uniq_char(s: String) -> i32 {
         let mut hm: HashMap<char, usize> = HashMap::new();
 
-        for (i, ch) in s.chars().enumerate() {
+        for (_, ch) in s.chars().enumerate() {
             match hm.entry(ch) {
                 Occupied(mut en) => {
                     *en.get_mut() += 1;
