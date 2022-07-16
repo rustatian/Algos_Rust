@@ -33,3 +33,5 @@ mod search_insert_position;
 mod valid_perfect_square;
 mod sqrt;
 mod find_smallest_letter;
+mod first_bad_version;
+mod find_first_and_last_position;
