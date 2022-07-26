@@ -8,15 +8,18 @@ impl Solution {
 
         while left <= right {
             pivot = left + (right - left) / 2;
+            use std::cmp::Ordering;
 
-            if nums[pivot as usize] == target {
-                return pivot as i32;
-            }
-
-            if target < nums[pivot as usize] {
-                right = pivot - 1;
-            } else {
-                left = pivot + 1;
+            match nums[pivot as usize].cmp(&target) {
+                Ordering::Less => {
+                    left = pivot + 1;
+                }
+                Ordering::Equal => {
+                    return pivot as i32;
+                }
+                Ordering::Greater => {
+                    right = pivot - 1;
+                }
             }
         }
 
