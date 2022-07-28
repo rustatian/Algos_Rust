@@ -42,3 +42,4 @@ mod special_array_with_x_elements;
 mod maximum_units_on_a_truck;
 mod fibonacci_number;
 mod count_neg_numbers;
+mod majority_element;
