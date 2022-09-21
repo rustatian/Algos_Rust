@@ -1,2 +1,6 @@
 mod peak_index_mountain_array;
 mod search_2d_matrix;
+mod graph_valid_tree;
+mod number_of_connected_components;
+mod earliest_moment_when_friends;
+mod smallest_string_with_swaps;
