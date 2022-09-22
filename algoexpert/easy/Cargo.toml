@@ -1,11 +1,11 @@
 [package]
-name = "Hard"
+name = "ae_easy"
 version = "0.1.0"
-authors = ["Valery Piashchynski <piashchynski_valery@hotmail.com>"]
+authors = ["Valery Piashchynski <piashchynski.valery@gmail.com>"]
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-[dependencies]
-
 [lib]
+
+[dependencies]

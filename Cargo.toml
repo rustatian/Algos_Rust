@@ -1,15 +1,9 @@
 [workspace]
 members = [
-    "Adventofcode/2020",
-    "Algoexpert/easy",
-    "Algoexpert/medium",
-    "CodeWars/kyu_5",
-    "CodeWars/kyu_6",
-    "CodeWars/kyu_7",
-    "CodeWars/kyu_8",
-    "LeetCode/Easy",
-    "LeetCode/Hard",
-    "LeetCode/Medium",
+    "advent_of_code/*",
+    "algoexpert/*",
+    "codewars/*",
+    "leetcode/*",
     "hackers_delight",
     "intro_to_algos"
 ]

@@ -1,7 +1,7 @@
 [package]
-name = "kyu_7"
+name = "ae_medium"
 version = "0.1.0"
-authors = ["Valery Piashchynski <piashchynski_valery@hotmail.com>"]
+authors = ["Valery Piashchynski <piashchynski.valery@gmail.com>"]
 edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
