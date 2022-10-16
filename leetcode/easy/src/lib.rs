@@ -45,3 +45,4 @@ mod count_neg_numbers;
 mod majority_element;
 mod merge_sorted_array;
 mod intersection_of_two_arrays;
+mod path_exists_graph;
