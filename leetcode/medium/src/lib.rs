@@ -4,3 +4,4 @@ mod graph_valid_tree;
 mod number_of_connected_components;
 mod earliest_moment_when_friends;
 mod smallest_string_with_swaps;
+mod all_paths_from_source_to_target;
