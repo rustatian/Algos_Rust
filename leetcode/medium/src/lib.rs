@@ -5,3 +5,8 @@ mod number_of_connected_components;
 mod earliest_moment_when_friends;
 mod smallest_string_with_swaps;
 mod all_paths_from_source_to_target;
+mod perfect_squares;
+mod find_smallest_common;
+mod word_search;
+mod sum_of_subarray_minimums;
+mod find_players_with_zero_or_one_losses;
