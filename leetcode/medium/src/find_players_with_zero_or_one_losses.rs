@@ -5,7 +5,7 @@ struct Solution {}
 
 impl Solution {
     pub fn find_winners2(matches: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
-        let mut tmp: BTreeMap<i32, i32> = matches.into_iter().fold(BTreeMap::new(), |mut hm, m| {
+        let tmp: BTreeMap<i32, i32> = matches.into_iter().fold(BTreeMap::new(), |mut hm, m| {
             hm.entry(m[0]).or_insert(0); //winner
             *hm.entry(m[1]).or_insert(0) += 1; //looser
             hm

@@ -10,3 +10,5 @@ mod find_smallest_common;
 mod word_search;
 mod sum_of_subarray_minimums;
 mod find_players_with_zero_or_one_losses;
+mod insert_delete_get_random_O1;
+mod minimum_average_diff;

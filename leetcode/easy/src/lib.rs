@@ -47,3 +47,4 @@ mod merge_sorted_array;
 mod intersection_of_two_arrays;
 mod path_exists_graph;
 mod number_of_days_between_two_dates;
+mod determine_if_string_halves_are_alike;
