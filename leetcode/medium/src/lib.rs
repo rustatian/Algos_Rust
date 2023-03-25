@@ -20,3 +20,7 @@ mod house_robber;
 mod longest_common_subsequence;
 mod evaluate_reverse_polish_notation;
 mod add_two_numbers;
+mod lexicographically_smallest_eq_string;
+mod zero_filled_subarray;
+mod minimum_scope_path;
+mod count_pairs;
