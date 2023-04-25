@@ -31,7 +31,7 @@ impl Solution {
         let mut high = n;
 
         while low <= high {
-            let middle = low + (high-low) /2;
+            let middle = low + (high - low) / 2;
             let res = guess(middle);
 
             match res {

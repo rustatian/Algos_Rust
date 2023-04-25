@@ -31,7 +31,7 @@ fn pos_average(s: &str) -> f64 {
 
     let total_chars = (v[0].len() * v.len()) as f64;
     let mut chars_match: f64 = 0.0;
-    let mut permutation:f64 = 0.0;
+    let mut permutation: f64 = 0.0;
 
     for i in 0..v.len() {
         for j in i + 1..v.len() {
@@ -54,14 +54,16 @@ mod tests {
         println!("{}", s);
         let merr = 1.0e-9;
         let actual = pos_average(s);
-        let inrange =
-            if expected == 0.0 {
-                actual.abs() <= merr
-            } else {
-                (actual - expected).abs() / expected <= merr
-            };
+        let inrange = if expected == 0.0 {
+            actual.abs() <= merr
+        } else {
+            (actual - expected).abs() / expected <= merr
+        };
         if !inrange {
-            println!("Expected value must be near: {:e} but was:{:e}", expected, actual);
+            println!(
+                "Expected value must be near: {:e} but was:{:e}",
+                expected, actual
+            );
         } else {
             println!("....... correct");
         }
@@ -71,7 +73,13 @@ mod tests {
 
     #[test]
     fn basic_tests() {
-        assert_fuzzy("466960, 069060, 494940, 060069, 060090, 640009, 496464, 606900, 004000, 944096", 26.6666666667);
-        assert_fuzzy("444996, 699990, 666690, 096904, 600644, 640646, 606469, 409694, 666094, 606490", 29.2592592593);
+        assert_fuzzy(
+            "466960, 069060, 494940, 060069, 060090, 640009, 496464, 606900, 004000, 944096",
+            26.6666666667,
+        );
+        assert_fuzzy(
+            "444996, 699990, 666690, 096904, 600644, 640646, 606469, 409694, 666094, 606490",
+            29.2592592593,
+        );
     }
 }

@@ -5,7 +5,7 @@ impl Solution {
         let mut res = vec![];
 
         // C(n,k) = C(n-1,k-1) + C(n-1,k)
-        for i in 0..row_index as usize + 1{
+        for i in 0..row_index as usize + 1 {
             res.push(vec![1; i + 1]);
             for j in 1..i {
                 res[i][j] = res[i - 1][j - 1] + res[i - 1][j];

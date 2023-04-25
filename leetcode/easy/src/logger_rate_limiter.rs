@@ -57,6 +57,5 @@ mod tests {
         assert!(l.should_print_message(30, "A0".to_string())); // 30 + 10
         assert!(!l.should_print_message(33, "A0".to_string()));
         assert!(l.should_print_message(36, "A4".to_string()));
-
     }
 }

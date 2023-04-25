@@ -43,7 +43,6 @@
 //
 //In Shell bash, arrays are replaced by strings.
 
-
 fn som(x: i64, y: i64) -> i64 {
     x + y
 }
@@ -71,7 +70,7 @@ fn gcdi(m: i64, n: i64) -> i64 {
     }
 
     if a < 0 {
-        return a * -1
+        return a * -1;
     }
     return a;
 }
@@ -114,7 +113,6 @@ fn testing_maxi(a: &[i64], exp: &Vec<i64>) -> () {
     assert_eq!(&oper_array(maxi, a, a[0]), exp);
 }
 
-
 #[test]
 fn lcd_test() {
     assert_eq!(lcmu(54, 24), 216)
@@ -132,7 +130,10 @@ fn basics_som() {
 
 #[test]
 fn basics_lcmu() {
-    testing_lcmu(&[18, 69, -90, -78, 65, 40], &vec![18, 414, 2070, 26910, 26910, 107640]);
+    testing_lcmu(
+        &[18, 69, -90, -78, 65, 40],
+        &vec![18, 414, 2070, 26910, 26910, 107640],
+    );
 }
 
 #[test]

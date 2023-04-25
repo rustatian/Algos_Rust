@@ -20,13 +20,13 @@ fn row_sum_odd_numbers(n: i64) -> i64 {
     let mut first_number: i64 = 1;
 
     for i in 1..n {
-        first_number += i*2
+        first_number += i * 2
     }
 
     (n * (2 * (first_number) + (n - 1) * 2)) / 2
 }
 
-fn row_sum_odd_numbers_cata(n:i64) -> i64 {
+fn row_sum_odd_numbers_cata(n: i64) -> i64 {
     // beautiful math here. much easier to explain on board, but itsa kode!
     // on Instruction we have five levels (possible for input n)
     // let i be order no of element.

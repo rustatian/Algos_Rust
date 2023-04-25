@@ -47,8 +47,18 @@ impl Solution {
                 let tmp = std::cmp::max(mx, mn);
                 *res = std::cmp::max(tmp, *res);
 
-                Solution::dfs(v.left.clone(), std::cmp::max(max, v.val), std::cmp::min(min, v.val), res);
-                Solution::dfs(v.right.clone(), std::cmp::max(max, v.val), std::cmp::min(min, v.val), res);
+                Solution::dfs(
+                    v.left.clone(),
+                    std::cmp::max(max, v.val),
+                    std::cmp::min(min, v.val),
+                    res,
+                );
+                Solution::dfs(
+                    v.right.clone(),
+                    std::cmp::max(max, v.val),
+                    std::cmp::min(min, v.val),
+                    res,
+                );
             }
         }
     }

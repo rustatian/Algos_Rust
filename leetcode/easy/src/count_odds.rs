@@ -8,9 +8,7 @@ impl Solution {
             // even
             0 => count / 2,
             // odd
-            _ => {
-                count / 2 + ((low & 1) | (high & 1))
-            }
+            _ => count / 2 + ((low & 1) | (high & 1)),
         }
     }
 }

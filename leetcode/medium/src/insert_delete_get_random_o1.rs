@@ -1,18 +1,17 @@
+use rand::{prelude::IteratorRandom, Rng};
 use std::collections::HashSet;
-use rand::{Rng, prelude::IteratorRandom};
 
 struct RandomizedSet {
-    set: HashSet<i32>
+    set: HashSet<i32>,
 }
 
-
 /**
-  * `&self` means the method takes an immutable reference
-  * If you need a mutable reference, change it to `&mut self` instead.
+ * `&self` means the method takes an immutable reference
+ * If you need a mutable reference, change it to `&mut self` instead.
  */
 impl RandomizedSet {
     fn new() -> Self {
-        RandomizedSet{
+        RandomizedSet {
             set: HashSet::new(),
         }
     }
@@ -28,12 +27,5 @@ impl RandomizedSet {
     fn get_random(&self) -> i32 {
         let mut rng = rand::thread_rng();
         *self.set.iter().choose(&mut rng).unwrap()
-    }
-}
-
-mod tests {
-    #[test]
-    fn test(){
-
     }
 }

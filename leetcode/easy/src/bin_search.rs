@@ -50,7 +50,7 @@ impl Solution {
             };
         }
 
-       -1
+        -1
     }
 }
 

@@ -16,8 +16,6 @@ Output: ""
 Explanation: There is no common prefix among the input strings.
  */
 
-
-
 struct Solution {}
 
 impl Solution {

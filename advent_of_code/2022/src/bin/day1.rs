@@ -38,5 +38,8 @@ fn main() {
 
     all.sort_unstable();
 
-    println!("top3: {}", all[all.len() - 1] + all[all.len() - 2] + all[all.len() - 3])
+    println!(
+        "top3: {}",
+        all[all.len() - 1] + all[all.len() - 2] + all[all.len() - 3]
+    )
 }

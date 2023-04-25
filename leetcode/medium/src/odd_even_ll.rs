@@ -48,8 +48,3 @@ impl Solution {
         odd.next
     }
 }
-
-mod tests {
-    #[test]
-    fn test(){}
-}

@@ -20,7 +20,7 @@ fn main() {
     }
 
     println!("max ID is: {}", max_id);
-    
+
     v.sort_unstable();
 
     for seats in v.windows(2) {

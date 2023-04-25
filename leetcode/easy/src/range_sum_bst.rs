@@ -42,9 +42,7 @@ impl Solution {
         let mut sum = 0;
 
         match node {
-            None => {
-                0
-            }
+            None => 0,
             Some(val) => {
                 let nd = val.as_ref().borrow();
                 if nd.val >= low && nd.val <= high {
@@ -52,7 +50,7 @@ impl Solution {
                 }
 
                 sum += Solution::dfs(nd.left.clone(), low, high);
-                sum += Solution::dfs(nd.right.clone(), low,high);
+                sum += Solution::dfs(nd.right.clone(), low, high);
 
                 sum
             }

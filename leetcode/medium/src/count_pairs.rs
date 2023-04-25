@@ -1,11 +1,9 @@
-
-
 struct Solution {}
 
 impl Solution {
     pub fn count_pairs(n: i32, edges: Vec<Vec<i32>>) -> i64 {
         use std::collections::hash_map::Entry;
-        use std::collections::{HashMap};
+        use std::collections::HashMap;
 
         let mut root = vec![0; n as usize];
 
@@ -74,10 +72,7 @@ mod tests {
     fn test1() {
         assert_eq!(
             0,
-            Solution::count_pairs(
-                5,
-                vec![vec![1, 0], vec![3, 1], vec![0, 4], vec![2, 1]]
-            )
+            Solution::count_pairs(5, vec![vec![1, 0], vec![3, 1], vec![0, 4], vec![2, 1]])
         )
     }
 }

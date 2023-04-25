@@ -27,14 +27,16 @@ fn f(x: f64) -> f64 {
 
 fn assert_fuzzy_equals(actual: f64, expected: f64) {
     let merr = 1.0e-12;
-    let inrange =
-        if expected == 0.0 {
-            actual.abs() <= merr
-        } else {
-            (actual - expected).abs() / expected <= merr
-        };
+    let inrange = if expected == 0.0 {
+        actual.abs() <= merr
+    } else {
+        (actual - expected).abs() / expected <= merr
+    };
     if !inrange {
-        println!("Expected value must be near: {:e} but was:{:e}", expected, actual);
+        println!(
+            "Expected value must be near: {:e} but was:{:e}",
+            expected, actual
+        );
     } else {
         //println!("....... GOOD\n");
     }

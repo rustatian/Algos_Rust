@@ -14,26 +14,28 @@ fn xo(string: &'static str) -> bool {
 
     for c in lower.chars() {
         match c {
-            'x' => { x_count = x_count + 1; }
-            'o' => { o_count = o_count + 1; }
+            'x' => {
+                x_count = x_count + 1;
+            }
+            'o' => {
+                o_count = o_count + 1;
+            }
             _ => {}
         }
     }
 
     if x_count == o_count {
-        return true
+        return true;
     }
-    return false
+    return false;
 }
 
 // best practise
 fn xo2(string: &'static str) -> bool {
-    string.chars().fold(0, |a, c|{
-        match c {
-            'x' | 'X' => a + 1,
-            'o' | 'O' => a - 1,
-            _ => a
-        }
+    string.chars().fold(0, |a, c| match c {
+        'x' | 'X' => a + 1,
+        'o' | 'O' => a - 1,
+        _ => a,
     }) == 0
 }
 

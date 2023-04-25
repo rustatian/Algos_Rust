@@ -31,7 +31,6 @@
 //
 //#Ref https://en.wikipedia.org/wiki/Prime_gap
 
-
 fn gap(g: i32, m: u64, n: u64) -> Option<(u64, u64)> {
     let mut cur_prime: u64 = 0;
 
@@ -46,7 +45,6 @@ fn gap(g: i32, m: u64, n: u64) -> Option<(u64, u64)> {
 
     None
 }
-
 
 fn is_prime(n: u64) -> bool {
     if n <= 3 {
@@ -66,34 +64,34 @@ fn is_prime(n: u64) -> bool {
     true
 }
 
-
 fn testing(g: i32, m: u64, n: u64, exp: Option<(u64, u64)>) -> () {
     assert_eq!(gap(g, m, n), exp)
 }
 
 #[test]
 fn basics_gap() {
-    testing(2,100,110, Some((101, 103)));
-    testing(4,100,110, Some((103, 107)));
-    testing(6,100,110, None);
-    testing(8,300,400, Some((359, 367)));
+    testing(2, 100, 110, Some((101, 103)));
+    testing(4, 100, 110, Some((103, 107)));
+    testing(6, 100, 110, None);
+    testing(8, 300, 400, Some((359, 367)));
     testing(11, 30000, 100000, None);
 }
-
 
 // FROM CODEWARS
 
 fn gap_cw(g: i32, m: u64, n: u64) -> Option<(u64, u64)> {
     let mut primes = (m..n + 1).filter(|&x| is_prime(x));
     primes.next().and_then(|mut prev| {
-        primes.find(|&prim|
-            if prim - prev == g as u64 {
-                true
-            } else {
-                prev = prim;
-                false
-            }
-        ).and_then(|second| Some((prev, second)))
+        primes
+            .find(|&prim| {
+                if prim - prev == g as u64 {
+                    true
+                } else {
+                    prev = prim;
+                    false
+                }
+            })
+            .and_then(|second| Some((prev, second)))
     })
 }
 

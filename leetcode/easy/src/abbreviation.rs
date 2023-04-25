@@ -39,16 +39,22 @@ impl Solution {
         let mut i = 0;
         let mut j = 0;
 
-        while j<abbr.len() {
+        while j < abbr.len() {
             if abbr.chars().nth(j).unwrap().is_numeric() {
                 if abbr.chars().nth(j).unwrap() == '0' && num == 0 {
                     return false;
                 }
-                num = num*10+abbr.chars().nth(j).unwrap().to_string().parse::<i32>().unwrap();
+                num = num * 10
+                    + abbr
+                        .chars()
+                        .nth(j)
+                        .unwrap()
+                        .to_string()
+                        .parse::<i32>()
+                        .unwrap();
             } else {
                 i += num;
                 num = 0;
-
 
                 if word.len() <= i as usize {
                     return false;
@@ -58,8 +64,10 @@ impl Solution {
                     return false;
                 }
 
-                if i> word.len() as i32 || abbr.chars().nth(j).unwrap() != word.chars().nth(i as usize).unwrap() {
-                    return false
+                if i > word.len() as i32
+                    || abbr.chars().nth(j).unwrap() != word.chars().nth(i as usize).unwrap()
+                {
+                    return false;
                 }
                 i += 1;
             }
@@ -76,8 +84,7 @@ mod tests {
 
     #[test]
     fn test() {
-        let res =
-            Solution::valid_word_abbreviation("hi".into(), "2i".into());
+        let res = Solution::valid_word_abbreviation("hi".into(), "2i".into());
         assert!(!res);
     }
 }

@@ -39,36 +39,9 @@ fn harness(values: impl IntoIterator<Item = i32>) -> Vec<i32> {
     values
 }
 
-
 #[test]
 fn basic_test() {
     assert_eq!(min_value(vec![1, 3, 1]), 13);
     assert_eq!(min_value(vec![4, 7, 5, 7]), 457);
     assert_eq!(min_value(vec![4, 8, 1, 4]), 148);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

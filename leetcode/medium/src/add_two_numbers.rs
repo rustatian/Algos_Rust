@@ -1,23 +1,23 @@
-struct Solution{}
+struct Solution {}
 
 #[derive(PartialEq, Eq, Clone, Debug)]
 pub struct ListNode {
-  pub val: i32,
-  pub next: Option<Box<ListNode>>
+    pub val: i32,
+    pub next: Option<Box<ListNode>>,
 }
 
 impl ListNode {
-  #[inline]
-  fn new(val: i32) -> Self {
-    ListNode {
-      next: None,
-      val
+    #[inline]
+    fn new(val: i32) -> Self {
+        ListNode { next: None, val }
     }
-  }
 }
 
 impl Solution {
-    pub fn add_two_numbers(mut l1: Option<Box<ListNode>>, mut l2: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
+    pub fn add_two_numbers(
+        mut l1: Option<Box<ListNode>>,
+        mut l2: Option<Box<ListNode>>,
+    ) -> Option<Box<ListNode>> {
         let mut res = Box::new(ListNode::new(0));
         let mut curr = &mut res;
         let mut carry = 0;
@@ -42,7 +42,6 @@ impl Solution {
                 }
             }
 
-
             let sum = l1s + l2s + carry;
             carry = sum / 10;
 
@@ -51,13 +50,5 @@ impl Solution {
         }
 
         res.next
-    }
-}
-
-
-mod tests {
-    #[test]
-    fn test(){
-        println!("foo");
     }
 }

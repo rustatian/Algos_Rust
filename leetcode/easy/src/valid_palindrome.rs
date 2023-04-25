@@ -1,8 +1,11 @@
-struct Solution{}
+struct Solution {}
 
 impl Solution {
     pub fn is_palindrome(s: String) -> bool {
-        let s = s.to_lowercase().replace(|c:char| !c.is_alphanumeric(), "").into_bytes();
+        let s = s
+            .to_lowercase()
+            .replace(|c: char| !c.is_alphanumeric(), "")
+            .into_bytes();
 
         if s.is_empty() || s.len() == 1 {
             return true;
@@ -33,13 +36,14 @@ impl Solution {
     }
 }
 
-
 mod tests {
     use crate::valid_palindrome::Solution;
 
     #[test]
     fn test() {
-        assert!(Solution::is_palindrome("A man, a plan, a canal: Panama".to_string()));
+        assert!(Solution::is_palindrome(
+            "A man, a plan, a canal: Panama".to_string()
+        ));
         assert!(!Solution::is_palindrome("race a car".to_string()));
         assert!(Solution::is_palindrome(" ".to_string()));
         assert!(Solution::is_palindrome("a".to_string()));

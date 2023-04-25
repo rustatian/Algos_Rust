@@ -33,8 +33,8 @@ impl Solution {
         let r = Solution::helper(matrix, memo, row + 1, col + 1);
         let c = Solution::helper(matrix, memo, row + 1, col - 1);
 
-
-        memo[row as usize][col as usize] = std::cmp::min(l, std::cmp::min(c, r)) + matrix[row as usize][col as usize];
+        memo[row as usize][col as usize] =
+            std::cmp::min(l, std::cmp::min(c, r)) + matrix[row as usize][col as usize];
         memo[row as usize][col as usize]
     }
 }

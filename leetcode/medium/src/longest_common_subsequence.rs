@@ -18,9 +18,8 @@ impl Solution {
 
         for idx in 0..smallest_len {
             if t1[idx] == t2[idx] {
-                count+=1;
+                count += 1;
             }
-
         }
 
         count
@@ -31,9 +30,18 @@ mod tests {
     use crate::longest_common_subsequence::Solution;
 
     #[test]
-    fn test(){
-        assert_eq!(3, Solution::longest_common_subsequence(String::from("abcde"), String::from("ace")));
-        assert_eq!(3, Solution::longest_common_subsequence(String::from("abc"), String::from("abc")));
-        assert_eq!(0, Solution::longest_common_subsequence(String::from("abc"), String::from("def")));
+    fn test() {
+        assert_eq!(
+            3,
+            Solution::longest_common_subsequence(String::from("abcde"), String::from("ace"))
+        );
+        assert_eq!(
+            3,
+            Solution::longest_common_subsequence(String::from("abc"), String::from("abc"))
+        );
+        assert_eq!(
+            0,
+            Solution::longest_common_subsequence(String::from("abc"), String::from("def"))
+        );
     }
 }

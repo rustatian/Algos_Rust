@@ -41,11 +41,10 @@
 //'PA': 'Pennsylvania',
 //'VA': 'Virginia'
 
-const DOTS:&str = ".....";
-
+const DOTS: &str = ".....";
 
 fn by_state(s: &str) -> String {
-    let mut ss:Vec<&str> = s.split('\n').collect();
+    let mut ss: Vec<&str> = s.split('\n').collect();
 
     for ii in ss {
         println!("{:?}", ii.chars().nth(ii.len()));
@@ -54,8 +53,6 @@ fn by_state(s: &str) -> String {
     " ".to_string()
     // your code
 }
-
-
 
 #[cfg(test)]
 mod tests {
@@ -80,24 +77,5 @@ mod tests {
         let ad3="John Daggett, 341 King Road, Plymouth MA\nAlice Ford, 22 East Broadway, Richmond VA\nSal Carpenter, 73 6th Street, Boston MA";
         let ad3sol="Massachusetts\n..... John Daggett 341 King Road Plymouth Massachusetts\n..... Sal Carpenter 73 6th Street Boston Massachusetts\n Virginia\n..... Alice Ford 22 East Broadway Richmond Virginia";
         dotest(ad3, ad3sol);
-
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -33,7 +33,7 @@ impl Solution {
         let mut l_ptr = 0;
         loop {
             if l_ptr > r_ptr {
-                return true
+                return true;
             }
 
             // get r ptr value

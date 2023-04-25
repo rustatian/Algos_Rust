@@ -1,4 +1,3 @@
-
 struct Solution {}
 
 impl Solution {
@@ -9,20 +8,18 @@ impl Solution {
         let mut end = letters.len();
 
         while start < end {
-            let middle = start + (end - start) /2;
+            let middle = start + (end - start) / 2;
 
-            match letters[middle].cmp(&target){
+            match letters[middle].cmp(&target) {
                 Ordering::Greater => {
                     end = middle;
                 }
-                _ => {
-                    start = middle + 1
-                }
+                _ => start = middle + 1,
             }
         }
 
         if start == letters.len() {
-            return letters[0]
+            return letters[0];
         }
         letters[start]
     }

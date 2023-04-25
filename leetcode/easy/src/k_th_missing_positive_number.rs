@@ -25,7 +25,6 @@ impl Solution {
             }
         }
 
-
         arr[middle as usize] + k - (arr[middle as usize] - start as i32 - 1)
         // at this point we know, that the number is somewhere between
         // arr[start] arr[end], for example, test2, between [7,11].
