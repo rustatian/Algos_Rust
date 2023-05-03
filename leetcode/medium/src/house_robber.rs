@@ -1,29 +1,24 @@
 struct Solution {}
 
 impl Solution {
+    // bottom-up
     pub fn rob(nums: Vec<i32>) -> i32 {
-        // 100 - nums.len() max
-        let mut memo = vec![-1; nums.len()];
-        let res = Solution::from(0, &mut memo, &nums);
-        println!("{}", res);
-        res
-    }
-
-    pub fn from(idx: usize, memo: &mut Vec<i32>, houses: &Vec<i32>) -> i32 {
-        if houses.len() <= idx {
-            return 0;
+        if nums.len() == 1 {
+            return nums[0];
         }
 
-        if memo[idx] != -1 {
-            return memo[idx];
+        let mut h = vec![0;nums.len()];
+
+        // base
+        h[0] = nums[0];
+        h[1] = std::cmp::max(nums[0], nums[1]);
+
+        for i in 2..nums.len() {
+            h[i] = std::cmp::max(h[i-1], h[i-2]+nums[i]);
         }
 
-        memo[idx] = std::cmp::max(
-            Solution::from(idx + 1, memo, houses),
-            Solution::from(idx + 2, memo, houses) + houses[idx],
-        );
-
-        memo[idx]
+        // last
+        h[nums.len() - 1]
     }
 }
 

@@ -2,6 +2,7 @@
 #![allow(unused_assignments)]
 #![allow(non_snake_case)]
 
+mod find_diff_two_arrs;
 mod abbreviation;
 mod add_binary;
 mod add_strings;

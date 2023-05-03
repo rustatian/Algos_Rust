@@ -1,4 +1,5 @@
 #![allow(dead_code, unused)]
+mod min_cost_climbing_stairs;
 mod smallest_inf_set;
 mod add_two_numbers;
 mod all_paths_from_source_to_target;
