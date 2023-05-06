@@ -1,4 +1,5 @@
 #![allow(dead_code, unused)]
+mod max_number_vowels;
 mod min_cost_climbing_stairs;
 mod smallest_inf_set;
 mod add_two_numbers;
