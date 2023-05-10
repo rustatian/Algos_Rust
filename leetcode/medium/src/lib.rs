@@ -1,4 +1,6 @@
 #![allow(dead_code, unused)]
+mod spiral_matrix2;
+mod number_of_subseq_that_satisfy_sum;
 mod max_number_vowels;
 mod min_cost_climbing_stairs;
 mod smallest_inf_set;
