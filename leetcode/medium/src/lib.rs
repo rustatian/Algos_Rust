@@ -1,4 +1,7 @@
 #![allow(dead_code, unused)]
+mod snapshot_array;
+mod design_ll;
+mod swapping_nodes_in_a_list;
 mod spiral_matrix2;
 mod number_of_subseq_that_satisfy_sum;
 mod max_number_vowels;

@@ -18,33 +18,35 @@ impl Solution {
     pub fn odd_even_list(mut head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
         head.as_ref()?;
 
-        let mut odd = Box::new(ListNode::new(0));
-        let mut even = Box::new(ListNode::new(0));
+        let mut odd = ListNode::new(0);
+        let mut even = ListNode::new(0);
 
-        let mut ot = &mut odd;
-        let mut et = &mut even;
+        let mut odd_even = true;
+        let mut curr = head.clone();
 
-        let mut even_odd = true;
+        while let Some(node) = curr.take() {
+           match odd_even {
+               true => {
 
-        while let Some(mut node) = head {
-            head = node.next.take();
+               }
 
-            match even_odd {
-                true => {
-                    ot.next = Some(node);
-                    ot = ot.next.as_mut()?;
-                }
-                false => {
-                    et.next = Some(node);
-                    et = et.next.as_mut()?;
-                }
-            }
+               false => {
 
-            // reverse
-            even_odd = !even_odd;
+               }
+           }
+
+           odd_even = !odd_even;
         }
+        
+        curr
+    }
+}
 
-        ot.next = even.next;
-        odd.next
+#[cfg(test)]
+mod tests {
+    use crate::odd_even_ll::ListNode;
+
+    #[test]
+    fn test1(){
     }
 }
