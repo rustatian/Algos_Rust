@@ -1,17 +1,6 @@
-use std::collections::HashMap;
-
-#[derive(Clone)]
-struct changes {
-    idx: i32,
-    elem: i32,
-}
-
 struct SnapshotArray {
-    array: Vec<i32>,
-    changes: Vec<changes>,
-    idxs: HashMap<usize, Vec<changes>>,
-    curr_snap: usize,
-    prev_snap: usize,
+    index_changes: Vec<Vec<[i32; 2]>>,
+    curr_snap: i32,
 }
 
 /**
@@ -20,52 +9,32 @@ struct SnapshotArray {
  */
 impl SnapshotArray {
     fn new(length: i32) -> Self {
-        let mut arr = vec![0; length as usize];
-        let mut changes = Vec::new();
-        let mut hm = HashMap::new();
+        let mut v: Vec<Vec<[i32; 2]>> = vec![vec![[0, 0]]; length as usize];
+
         Self {
-            changes: changes,
-            array: arr,
-            idxs: hm,
+            index_changes: v,
             curr_snap: 0,
-            prev_snap: 0,
         }
     }
 
     fn set(&mut self, index: i32, val: i32) {
-        self.array[index as usize] = val;
-
-        let change = changes {
-            idx: index,
-            elem: val,
-        };
-
-        self.changes.push(change);
+        self.index_changes[index as usize].push([self.curr_snap, val]);
     }
 
     fn snap(&mut self) -> i32 {
-        self.idxs.insert(self.curr_snap, self.changes.clone());
-        self.changes.clear();
-
-
-        self.prev_snap = self.curr_snap;
         self.curr_snap += 1;
-
-        self.prev_snap as i32
+        self.curr_snap - 1
     }
 
     fn get(&self, index: i32, snap_id: i32) -> i32 {
-        if self.idxs.is_empty() {
-            return self.array[index as usize];
-        }
+        let val = &self.index_changes[index as usize];
+        let res = val.binary_search(&[snap_id, i32::MAX]);
 
-        let changes = self.idxs.get(&(snap_id as usize)).unwrap();
-        for change in changes {
-            if change.idx == index {
-                return change.elem;
-            }
+        match res {
+            Ok(idx) => self.index_changes[snap_id as usize][idx][1],
+
+            Err(idx) => self.index_changes[snap_id as usize][idx - 1][1],
         }
-        0
     }
 }
 
@@ -79,6 +48,7 @@ mod tests {
         sa.set(0, 4);
         sa.set(0, 16);
         sa.set(0, 13);
+        sa.set(1, 13);
         assert_eq!(0, sa.snap());
         assert_eq!(13, sa.get(0, 0));
         assert_eq!(1, sa.snap());
