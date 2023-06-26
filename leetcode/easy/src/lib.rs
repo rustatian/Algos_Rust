@@ -2,6 +2,8 @@
 #![allow(unused_assignments)]
 #![allow(non_snake_case)]
 
+mod number_of_1_bits;
+mod base7;
 mod find_diff_two_arrs;
 mod abbreviation;
 mod add_binary;
