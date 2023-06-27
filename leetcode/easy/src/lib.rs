@@ -2,6 +2,7 @@
 #![allow(unused_assignments)]
 #![allow(non_snake_case)]
 
+mod reverse_bits;
 mod number_of_1_bits;
 mod base7;
 mod find_diff_two_arrs;
