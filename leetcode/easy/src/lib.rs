@@ -58,3 +58,4 @@ mod valid_perfect_square;
 mod valid_word_square;
 mod strobogrammatic_number;
 mod assign_cookies;
+mod good_array;
