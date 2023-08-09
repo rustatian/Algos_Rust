@@ -36,3 +36,5 @@ mod sum_of_subarray_minimums;
 mod swapping_nodes_in_a_list;
 mod word_search;
 mod zero_filled_subarray;
+mod missing_element;
+mod minimum_maximum_pairs;
