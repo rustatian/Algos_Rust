@@ -1,0 +1,15 @@
+[package]
+name = "aoc2023"
+version = "0.1.0"
+authors = ["Valery Piashchynski <piashchynski.valery@gmail.com>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+
+[dependencies]
+
+[[bin]]
+name = "day1"
+path = "src/bin/day1.rs"
