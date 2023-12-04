@@ -25,19 +25,15 @@ impl Solution {
         let mut curr = head.clone();
 
         while let Some(node) = curr.take() {
-           match odd_even {
-               true => {
+            match odd_even {
+                true => {}
 
-               }
+                false => {}
+            }
 
-               false => {
-
-               }
-           }
-
-           odd_even = !odd_even;
+            odd_even = !odd_even;
         }
-        
+
         curr
     }
 }
@@ -47,6 +43,5 @@ mod tests {
     use crate::odd_even_ll::ListNode;
 
     #[test]
-    fn test1(){
-    }
+    fn test1() {}
 }

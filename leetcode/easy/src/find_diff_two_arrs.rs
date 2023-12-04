@@ -1,4 +1,4 @@
-struct Solution{}
+struct Solution {}
 
 impl Solution {
     pub fn find_difference(mut nums1: Vec<i32>, mut nums2: Vec<i32>) -> Vec<Vec<i32>> {
@@ -17,7 +17,7 @@ impl Solution {
             if start1 >= nums1.len() {
                 while start2 < nums2.len() {
                     ans2.push(nums2[start2]);
-                    start2+=1;
+                    start2 += 1;
                 }
 
                 return vec![ans1, ans2];
@@ -26,7 +26,7 @@ impl Solution {
             if start2 >= nums2.len() {
                 while start1 < nums1.len() {
                     ans1.push(nums1[start1]);
-                    start1+=1;
+                    start1 += 1;
                 }
 
                 return vec![ans1, ans2];
@@ -37,18 +37,18 @@ impl Solution {
 
             if v1 < v2 {
                 ans1.push(v1);
-                start1+=1;
+                start1 += 1;
                 continue;
             }
 
             if v2 < v1 {
                 ans2.push(v2);
-                start2+=1;
+                start2 += 1;
                 continue;
             }
 
-            start1+=1;
-            start2+=1;
+            start1 += 1;
+            start2 += 1;
             continue;
         }
     }
@@ -58,7 +58,10 @@ mod tests {
     use crate::find_diff_two_arrs::Solution;
 
     #[test]
-    fn test(){
-        assert_eq!(vec![vec![1,3], vec![4,6]], Solution::find_difference(vec![1,2,3], vec![2,4,6]));
+    fn test() {
+        assert_eq!(
+            vec![vec![1, 3], vec![4, 6]],
+            Solution::find_difference(vec![1, 2, 3], vec![2, 4, 6])
+        );
     }
 }

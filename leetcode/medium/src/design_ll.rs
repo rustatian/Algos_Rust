@@ -4,14 +4,14 @@ struct Node {
 }
 
 struct MyLinkedList {
-    head: Option<Box<Node>>
+    head: Option<Box<Node>>,
 }
 
 impl MyLinkedList {
     fn new() -> Self {
         MyLinkedList { head: None }
     }
-    
+
     fn get(&self, index: i32) -> i32 {
         if index < 0 {
             return -1;
@@ -24,22 +24,14 @@ impl MyLinkedList {
                 }
             }
         }
-       -1
+        -1
     }
-    
-    fn add_at_head(&self, val: i32) {
-        
-    }
-    
-    fn add_at_tail(&self, val: i32) {
-        
-    }
-    
-    fn add_at_index(&self, index: i32, val: i32) {
-        
-    }
-    
-    fn delete_at_index(&self, index: i32) {
-        
-    }
+
+    fn add_at_head(&self, val: i32) {}
+
+    fn add_at_tail(&self, val: i32) {}
+
+    fn add_at_index(&self, index: i32, val: i32) {}
+
+    fn delete_at_index(&self, index: i32) {}
 }

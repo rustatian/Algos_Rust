@@ -12,7 +12,7 @@ impl Solution {
         }
         let mut res = String::new();
 
-        let mut nn = if num < 0 { num*-1 } else {num};
+        let mut nn = if num < 0 { num * -1 } else { num };
 
         while nn != 0 {
             let tmp = nn % 7;
@@ -28,13 +28,12 @@ impl Solution {
     }
 }
 
-
 #[cfg(test)]
 mod tests {
     use crate::base7::Solution;
 
     #[test]
-    fn test(){
+    fn test() {
         assert_eq!(String::from("202"), Solution::convert_to_base7(100));
         assert_eq!(String::from("-10"), Solution::convert_to_base7(-7));
     }

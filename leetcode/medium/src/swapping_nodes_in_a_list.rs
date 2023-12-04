@@ -26,7 +26,7 @@ impl Solution {
                 Some(v) => {
                     num += 1;
                     if num == k {
-                        val1 = v.to_owned().val; 
+                        val1 = v.to_owned().val;
                     }
                 }
                 None => {
@@ -42,7 +42,7 @@ impl Solution {
                 Some(v) => {
                     num += 1;
                     if num == k {
-                        val1 = v.to_owned().val; 
+                        val1 = v.to_owned().val;
                     }
                 }
                 None => {
@@ -50,7 +50,6 @@ impl Solution {
                 }
             }
         }
-
 
         head
     }

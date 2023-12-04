@@ -1,7 +1,7 @@
 struct Solution {}
 
 impl Solution {
-    pub fn hammingWeight (n: u32) -> i32 {
+    pub fn hammingWeight(n: u32) -> i32 {
         let m1: u64 = 0x5555555555555555;
         let m2: u64 = 0x3333333333333333;
         let m4: u64 = 0x0f0f0f0f0f0f0f0f;
@@ -16,9 +16,8 @@ impl Solution {
     }
 }
 
-
 #[cfg(test)]
 mod tests {
     #[test]
-    fn test(){}
+    fn test() {}
 }

@@ -4,7 +4,7 @@ impl Solution {
     pub fn max_vowels(s: String, k: i32) -> i32 {
         let iter = s.as_bytes().windows(k as usize);
         let mut curr_max = 0;
-     
+
         // check the current maximum
         for i in 0..k as usize {
             match s.as_bytes()[i] {

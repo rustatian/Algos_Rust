@@ -1,5 +1,5 @@
-use std::collections::{BinaryHeap, HashSet};
 use std::cmp::Reverse;
+use std::collections::{BinaryHeap, HashSet};
 
 struct SmallestInfiniteSet {
     queue: BinaryHeap<Reverse<i32>>,
@@ -7,20 +7,19 @@ struct SmallestInfiniteSet {
     min: i32,
 }
 
-
-/** 
+/**
  * `&self` means the method takes an immutable reference.
  * If you need a mutable reference, change it to `&mut self` instead.
  */
 impl SmallestInfiniteSet {
     fn new() -> Self {
-        Self{
+        Self {
             contains: HashSet::new(),
             queue: BinaryHeap::new(),
             min: 1,
         }
     }
-    
+
     fn pop_smallest(&mut self) -> i32 {
         // check if the heap contains some elemets
         if self.queue.is_empty() {
@@ -35,14 +34,13 @@ impl SmallestInfiniteSet {
             }
         }
 
-
         let num = self.queue.pop();
         let ret = num.unwrap().0;
         self.contains.remove(&ret);
 
         ret
     }
-    
+
     fn add_back(&mut self, num: i32) {
         if num >= self.min {
             return;

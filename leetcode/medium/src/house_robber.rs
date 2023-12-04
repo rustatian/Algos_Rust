@@ -7,14 +7,14 @@ impl Solution {
             return nums[0];
         }
 
-        let mut h = vec![0;nums.len()];
+        let mut h = vec![0; nums.len()];
 
         // base
         h[0] = nums[0];
         h[1] = std::cmp::max(nums[0], nums[1]);
 
         for i in 2..nums.len() {
-            h[i] = std::cmp::max(h[i-1], h[i-2]+nums[i]);
+            h[i] = std::cmp::max(h[i - 1], h[i - 2] + nums[i]);
         }
 
         // last
