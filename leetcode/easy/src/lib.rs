@@ -32,6 +32,7 @@ mod logger_rate_limiter;
 mod longest_prefix;
 mod majority_element;
 mod max_stack;
+mod maximum_score;
 mod maximum_units_on_a_truck;
 mod merge_sorted_array;
 mod merge_two_sorted_lists;
