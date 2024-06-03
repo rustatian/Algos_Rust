@@ -1,6 +1,7 @@
 #![allow(dead_code, unused)]
 mod add_two_numbers;
 mod all_paths_from_source_to_target;
+mod chars_2486_to_string;
 mod count_pairs;
 mod design_ll;
 mod earliest_moment_when_friends;

@@ -9,19 +9,19 @@ impl Solution {
             let first = &s[0..i];
             let second = &s[i..=s.len() - 1];
 
-	    let mut zeroes = 0;
-	    for i in first {
-		if *i == b'0' {
-			zeroes+=1;
-		}
-	    }
+            let mut zeroes = 0;
+            for i in first {
+                if *i == b'0' {
+                    zeroes += 1;
+                }
+            }
 
-	    let mut ones = 0;
-	    for i in second {
-		if *i == b'1' {
-			ones+=1;
-		}
-	    }
+            let mut ones = 0;
+            for i in second {
+                if *i == b'1' {
+                    ones += 1;
+                }
+            }
 
             max = std::cmp::max(max, zeroes + ones);
         }

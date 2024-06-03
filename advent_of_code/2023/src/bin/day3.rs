@@ -89,7 +89,11 @@ fn find_right(row: &mut Vec<char>, start_idx: usize) -> i32 {
     num
 }
 
-fn find_left_p2(row: &mut Vec<char>, start_idx: usize, coord_hm: &mut HashMap<Coordinates, i32>) -> i32 {
+fn find_left_p2(
+    row: &mut Vec<char>,
+    start_idx: usize,
+    coord_hm: &mut HashMap<Coordinates, i32>,
+) -> i32 {
     let mut tmp_res = VecDeque::new();
     let mut start_idx = start_idx;
 
@@ -154,7 +158,6 @@ fn find_right_p2(row: &mut Vec<char>, start_idx: usize) -> i32 {
     num
 }
 
-
 fn part_one(matrix: &mut Vec<Vec<char>>) {
     let mut res = 0;
     for row in 0..matrix.len() {
@@ -202,9 +205,9 @@ fn part_one(matrix: &mut Vec<Vec<char>>) {
 }
 
 struct Coordinates {
-    x1:i32,
-    x2:i32,
-    val: i32
+    x1: i32,
+    x2: i32,
+    val: i32,
 }
 
 fn part_two(matrix: &mut Vec<Vec<char>>) {
