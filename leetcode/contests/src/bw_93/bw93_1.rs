@@ -19,7 +19,7 @@ impl Solution {
 }
 
 mod tests {
-    use crate::bw_93::bw_1::Solution;
+    use crate::bw_93::bw93_1::Solution;
 
     #[test]
     fn test() {

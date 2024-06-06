@@ -1,4 +1,5 @@
 #![allow(dead_code, unused)]
+
 mod add_two_numbers;
 mod all_paths_from_source_to_target;
 mod chars_2486_to_string;
@@ -40,3 +41,4 @@ mod sum_of_subarray_minimums;
 mod swapping_nodes_in_a_list;
 mod word_search;
 mod zero_filled_subarray;
+mod hand_of_straights;
