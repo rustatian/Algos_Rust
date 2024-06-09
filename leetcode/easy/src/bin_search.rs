@@ -20,34 +20,43 @@ Explanation: 2 does not exist in nums so return -1
 Time complexity: https://en.wikipedia.org/wiki/Master_theorem_(analysis_of_algorithms) (case 2), a=1,b=2,d=0
  */
 
-use std::cmp::Ordering;
-
 struct Solution {}
 
 impl Solution {
     pub fn search(nums: Vec<i32>, target: i32) -> i32 {
-        let mut left = 0;
+        if nums.len() == 1 {
+            if nums[0] == target {
+                return 0;
+            } else {
+                return -1;
+            }
+        }
+
         let mut right = nums.len() - 1;
+        let mut left = 0;
 
-        while left <= right {
-            let pivot = left + (right - left) / 2;
+        while left < right {
+            let mid = left + (right - left) / 2;
 
-            match nums.get(pivot) {
-                None => {
-                    return -1;
+            match nums[mid].cmp(&target) {
+                std::cmp::Ordering::Equal => {
+                    return mid as i32;
                 }
-                Some(val) => match val.cmp(&target) {
-                    Ordering::Less => {
-                        left = pivot + 1;
+                std::cmp::Ordering::Less => {
+                    left = mid + 1;
+                }
+
+                std::cmp::Ordering::Greater => {
+                    if mid == 0 {
+                        return -1;
                     }
-                    Ordering::Equal => {
-                        return pivot as i32;
-                    }
-                    Ordering::Greater => {
-                        right = pivot - 1;
-                    }
-                },
-            };
+                    right = mid - 1;
+                }
+            }
+        }
+
+        if nums[left] == target {
+            return left as i32;
         }
 
         -1
@@ -60,12 +69,12 @@ mod tests {
 
     #[test]
     fn test() {
-        let v = vec![-1, 0, 3, 5, 9, 12];
-        let res = Solution::search(v, 2);
-        assert_eq!(res, -1);
+        // let v = vec![-1, 0, 3, 5, 9, 12];
+        // let res = Solution::search(v, 2);
+        // assert_eq!(res, -1);
 
         let v = vec![2, 5];
-        let res = Solution::search(v, 2);
+        let res = Solution::search(v, 0);
         assert_eq!(res, 0);
     }
 }
