@@ -2,30 +2,37 @@ struct Solution {}
 
 impl Solution {
     pub fn my_sqrt(x: i32) -> i32 {
-        use std::cmp::Ordering;
+        if x == 0 {
+            return 0;
+        }
 
-        let mut start = 0;
-        let mut end = x;
+        if x == 1 {
+            return 1;
+        }
+
+        let mut left = 0;
+        let mut right = x;
         let mut answer = 0;
 
-        while start <= end {
-            let middle = start + (end - start) / 2;
+        while left < right {
+            let mid: usize = (left + (right - left) / 2) as usize;
 
-            match middle.checked_mul(middle) {
-                Some(val) => match val.cmp(&x) {
-                    Ordering::Less => {
-                        answer = middle;
-                        start = middle + 1;
+            match (mid * mid).cmp(&(x as usize)) {
+                std::cmp::Ordering::Equal => {
+                    return mid as i32;
+                }
+
+                std::cmp::Ordering::Less => {
+                    left = (mid + 1) as i32;
+                    if left * left <= x {
+                        answer = left;
+                    } else {
+                        answer = mid as i32;
                     }
-                    Ordering::Equal => {
-                        return middle;
-                    }
-                    Ordering::Greater => {
-                        end = middle - 1;
-                    }
-                },
-                None => {
-                    end = middle - 1;
+                }
+
+                std::cmp::Ordering::Greater => {
+                    right = (mid - 1) as i32;
                 }
             }
         }
@@ -39,6 +46,7 @@ mod tests {
 
     #[test]
     fn test() {
+        assert_eq!(46339, Solution::my_sqrt(2147395599));
         assert_eq!(2, Solution::my_sqrt(5));
         assert_eq!(2, Solution::my_sqrt(4));
         assert_eq!(1, Solution::my_sqrt(3));

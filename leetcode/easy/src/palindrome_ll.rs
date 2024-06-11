@@ -72,7 +72,7 @@ fn split_list(
     left: Option<Box<ListNode>>,
     mut right: Option<Box<ListNode>>,
 ) -> (Option<Box<ListNode>>, Option<Box<ListNode>>) {
-    let right_tail = right.as_mut().and_then(|mut node| {
+    let right_tail = right.as_mut().and_then(|node| {
         let right_tail = node.next.take();
         node.next = left;
         right_tail

@@ -25,10 +25,10 @@ struct Solution {}
 impl Solution {
     pub fn search(nums: Vec<i32>, target: i32) -> i32 {
         if nums.len() == 1 {
-            if nums[0] == target {
-                return 0;
+            return if nums[0] == target {
+                0
             } else {
-                return -1;
+                -1
             }
         }
 
