@@ -24,6 +24,7 @@ mod minimum_maximum_pairs;
 mod minimum_operations_to_reduce_x_to_zero;
 mod minimum_scope_path;
 mod number_of_closed_islands;
+mod minimum_increment;
 mod number_of_connected_components;
 mod number_of_subseq_that_satisfy_sum;
 mod odd_even_ll;

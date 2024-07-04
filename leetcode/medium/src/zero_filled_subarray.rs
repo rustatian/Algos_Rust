@@ -14,7 +14,7 @@ impl Solution {
             sum_of_1s += counter;
         }
 
-        return sum_of_1s as i64;
+        sum_of_1s
     }
 }
 

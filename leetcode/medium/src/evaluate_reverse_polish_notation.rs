@@ -3,8 +3,8 @@ struct Solution {}
 impl Solution {
     pub fn eval_rpn(mut tokens: Vec<String>) -> i32 {
         let mut sum = 0;
-        while !tokens.is_empty() {
-            let val = tokens.pop().unwrap();
+        while let Some(val) = tokens.pop() {
+
             match val.as_ref() {
                 "+" => {
                     let n1 = tokens.pop().unwrap();

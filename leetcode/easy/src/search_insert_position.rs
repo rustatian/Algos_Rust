@@ -28,7 +28,7 @@ impl Solution {
 }
 
 mod tests {
-    use super::Solution;
+    use crate::search_insert_position::Solution;
 
     #[test]
     fn test() {

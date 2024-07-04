@@ -27,7 +27,7 @@ impl Solution {
                 let l = idx - val;
                 let r = i as isize - idx;
 
-                let tmp2 = (l * r * arr[idx as usize] as isize) % MOD as isize;
+                let tmp2 = (l * r * arr[idx as usize] as isize) % MOD;
                 sum += tmp2;
                 sum %= MOD;
             }

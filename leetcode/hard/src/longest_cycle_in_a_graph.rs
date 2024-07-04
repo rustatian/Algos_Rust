@@ -30,7 +30,7 @@ impl Solution {
 }
 
 mod tests {
-    use crate::longest_cycle_in_a_graph::Solution;
+    
 
     #[test]
     fn test() {

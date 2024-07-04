@@ -12,7 +12,7 @@ impl Solution {
             el ^= nums[i]
         }
 
-        return el;
+        el
     }
 }
 

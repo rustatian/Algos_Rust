@@ -7,7 +7,7 @@ impl Solution {
         }
         use std::collections::hash_map::Entry;
         use std::collections::HashMap;
-        let mut s = s.chars().into_iter().collect::<Vec<char>>();
+        let mut s = s.chars().collect::<Vec<char>>();
 
         let mut root = vec![0; s.len()];
         let mut rank = vec![0; s.len()];

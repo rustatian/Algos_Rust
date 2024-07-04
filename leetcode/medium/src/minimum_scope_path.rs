@@ -20,7 +20,7 @@ impl Solution {
             }
         }
 
-        return res;
+        res
     }
 
     pub fn find(x: i32, root: &mut Vec<i32>) -> i32 {

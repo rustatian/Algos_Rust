@@ -15,7 +15,7 @@ impl Solution {
             }
         }
 
-        return low as i32;
+        low as i32
     }
 }
 

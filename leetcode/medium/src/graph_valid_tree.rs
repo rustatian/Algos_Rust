@@ -9,7 +9,7 @@ impl Solution {
         let mut root = vec![0; n as usize];
 
         for i in 0..n {
-            root[i as usize] = i as i32
+            root[i as usize] = i
         }
 
         for edge in &edges {

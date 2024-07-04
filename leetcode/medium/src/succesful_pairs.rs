@@ -11,7 +11,7 @@ impl Solution {
             let min_req = (success as f64 / spells[i] as f64).ceil() as i64;
             // let min_req = min.floor() as i64;
             if min_req > biggest {
-                res.push(0 as i32);
+                res.push(0_i32);
                 continue;
             } else {
                 let tmp = Solution::binary_search(&potions, min_req) as i64;
@@ -31,7 +31,7 @@ impl Solution {
         while start < end {
             let middle = start + (end - start) / 2;
 
-            match data[middle as usize].cmp(&(val as i32)) {
+            match data[middle].cmp(&(val as i32)) {
                 Ordering::Less => {
                     start = middle + 1;
                 }

@@ -17,11 +17,11 @@ impl Solution {
 
         for i in 0..nums2.len() {
             let num2 = if l != i {
-                (nums2[l] - nums2[i] as i64).div((l - i) as i64)
+                (nums2[l] - nums2[i]).div((l - i) as i64)
             } else {
                 0
             };
-            let num3 = (((nums2[i] as i64) / (i + 1) as i64) - num2).abs();
+            let num3 = ((nums2[i] / (i + 1) as i64) - num2).abs();
 
             if num3 < sum as i64 {
                 idx = i;

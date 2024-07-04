@@ -7,9 +7,9 @@ pub struct TreeNode {
     pub right: Option<Rc<RefCell<TreeNode>>>,
 }
 
-impl Into<Option<Rc<RefCell<TreeNode>>>> for TreeNode {
-    fn into(self) -> Option<Rc<RefCell<TreeNode>>> {
-        Option::from(Rc::new(RefCell::new(self)))
+impl From<TreeNode> for Option<Rc<RefCell<TreeNode>>> {
+    fn from(val: TreeNode) -> Self {
+        Option::from(Rc::new(RefCell::new(val)))
     }
 }
 
